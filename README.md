@@ -1,6 +1,6 @@
 # Curso Trybe - Desenvolvimento Web Full Stack
 
-Este repositório contém todas as atividades de aprendizagem desenvolvidas por _ [Ingris Andrade] (https://www.linkedin.com/in/ingrisandrade/) _ enquanto estudava na [Trybe] (https://www.betrybe.com/): rocket:
+Este repositório contém todas as atividades de aprendizagem desenvolvidas por [Ingris Andrade](https://www.linkedin.com/in/ingrisandrade/) enquanto estudava na [Trybe](https://www.betrybe.com/)  :rocket:
 
 _ "A Trybe é uma escola do futuro para quem quer melhorar de vida e construir uma carreira de sucesso em tecnologia, onde a pessoa só paga quando consegue um bom emprego."
 
@@ -8,24 +8,24 @@ O programa tem mais de 1.500 horas de aulas presenciais e online, e apresenta a 
 
 ## Fundamentos do Desenvolvimento Web: white_check_mark:
 
-##### Bloco 1: Introdução - Unix e Shell
+##### :white_check_mark: Bloco 1: Introdução - Unix e Shell
 
-- [] 1-3: _Unix e Shell- Parte 1_
-- [] 1-4: _Unix e Shell- Parte 2_
+- [X] 1-3: _Unix e Shell- Parte 1_
+- [X] 1-4: _Unix e Shell- Parte 2_
 
-##### Bloco 2: Git e GitHub
+##### :white_check_mark: Bloco 2: Git e GitHub
 
-- [] 2-1: _O que é e para que serve? _
-- [] 2-2: _Compreendendo os Comandos_
-- [] 2-3: _Internet - Entendendo como funciona_
+- [X] 2-1: _O que é e para que serve? _
+- [X] 2-2: _Compreendendo os Comandos_
+- [X] 2-3: _Internet - Entendendo como funciona_
 
-##### Bloco 3: Introdução - HTML e CSS
+##### :white_check_mark: Bloco 3: Introdução - HTML e CSS
 
-- [] 3-1: _HTML e CSS - Estruturas de página_
-- [] 3-2: _HTML e CSS - Introdução ao CSS_
-- [] 3-3: _HTML e CSS - Seletores e posicionamento_
-- [] 3-4: _HTML semântico_
-- [] 3-5: _ [Projeto - HTML e CSS] () _
+- [X] 3-1: _HTML e CSS - Estruturas de página_
+- [X] 3-2: _HTML e CSS - Introdução ao CSS_
+- [X] 3-3: _HTML e CSS - Seletores e posicionamento_
+- [X] 3-4: _HTML semântico_
+- [X] 3-5: _ [Projeto - HTML e CSS] () _
 
 ##### Bloco 4: Introdução - JavaScript
 
