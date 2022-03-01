@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Input e Tags</title>
+</head>
+<label>
+<!-- PARTE I - CRIAR FORMULÁRIOS EM HTML COM AS TAGS: INPUT , BUTTON , TEXTAREA , SELECT , FORM . -->
+
+<!-- Para criar um formulário -->
+	<form action=""></form>
+
+<!-- A propriedade GET envia os dados através da URL. -->
+	<form action="" method="get"></form>
+
+<!-- A propriedade POST envia as informações mais escondidas, não usa URL. -->
+	<form action="" method="post"></form>
+<!-- Ponto importante sobre o método POST para envio de arquivos e imagens, é preciso utilizar uma propriedade chamada ENCTYPE com o valor "multipart/form-data" -->
+
+
+	<form action="" method="get">
+<!-- Dentro do form ficam os campos que serão criados pra o formulário, o pricipal campo é: -->
+		<input type="text">
+<!-- Em type devemos colocar qual o tipo de entrada de dados que o usuário vai fazer, o padrão é text, mas existem outras propriedades. Também é possível adicionar a propriedade de name: -->
+		<input type="text" name=" ">
+<!-- Pode colocar o texto que descreve algo. -->
+<!-- Ainda dentro da tag form temos outro campo que é um botão para submeter o form para algum lugar. -->
+	</form>
+
+
+	<form action="" method="get">
+<!-- Aqui fica o que queremos que apareça dentro do botão para o usuário executar, onde tem 'Enviar'. -->
+		<button type="submit">Enviar</button>
+<!-- Esse tipo de botão serve para submeter os dados do formulário. -->
+	</form>
+
+
+<!-- PARTE II - INPUT TAG, TYPES E ATTRIBUTES -->
+
+	<form action="" method="get">
+<!-- O campo input pode ter vários tipo diferentes e pode receber várias propriedades/atributos que podem ser colocados dentro do campo input. -->
+		<input type="text" placeholder="" name="texto">
+<!-- PLACEHOLDER é o texto que fica embaixo do input que informçãoes sobre o que é preciso fazer. Ex: -->
+		<input type="text" placeholder="digite alguma coisa" name="texto">
+	</form>
+
+
+<!-- Na REQUIRED é possível deixar um campo obrigatório, o que ele diz é que antes de submeter tal formulário é preciso que determinado campo seja, obrigatoriamente, preenchido. -->
+	<input type="text" placeholder="" required name=" ">
+<!-- É possível usar classes para serem trabalhadas no CSS. -->
+
+
+	<form action="" method="get">
+		<input type="text" placeholder="" required value="" name=" ">
+<!-- A propriedade VALUE já deixa um campo preenchido, exemplo: -->
+		<input type="text" placeholder="" required value="Ingris" name=" ">
+
+		<input type="text" placeholder="" required value="" name=" " id="input-text">
+<!-- Podemos usar a propriedade id="" para verificar a input, esse campo é importante para manipular a tag HTML através do getElementByID ou também pelo querySelector. Já o campo name é o nome que é dado ao campo quando for colocado algum valor é esse name que vai para a URL quando o formulário é submetido. -->
+	</form>
+
+
+	<form action="" method="get">
+		<label for="">Digite seu nome</label>
+<!-- A propriedade FOR é para criar um vínculo entre a LABEL e o campo em si. 
+	Para criar um vículo entre o input com a label selecionamos a ID do input e colamos dentro do FOR localizado na LABEL, da seguinte forma: -->
+		<label for="input-text">Digite seu nome</label>
+		<input type="text" placeholder="" required value="" name=" " id="input-text">
+	</form>
+
+
+	<form action="" method="get">
+		<textarea name="" id="" cols="30" rows="10"></textarea>
+<!-- TEXTAREA é o campo onde é possível colocar mais informações. Essa tag trás algumas propriedades diferentes, como COLS e ROWS. -->
+<!-- COLS é a quantidade de colunas; e -->
+<!-- ROWS é a quantidade de linhas. -->
+<!-- Para deixar um texto pré-estabelecido no TEXTAREA, basta incluí-lo entre os símbolos, exemplo: -->
+		<textarea name="" id="" cols="30" rows="10">Texto já estabelecido</textarea>
+	</form>
+
+
+	<form action="" method="get">
+		<input type="checkbox">
+<!-- Os CHECKBOX são caixinhas que podem ser selecionadas e clicadas. -->
+		<input type="checkbox" value="" name="" checked>
+<!-- A propriedade VALUE exibir o valor quando o usuário seleciona a caixinha desejada. -->
+<!-- A propriedade NAME é importante para que todas as opções perteçam ao mesmo grupo de opções do CHECKBOX e para que isso ocorra é necessário que o nome entre as aspas sejam iguais. -->
+<!-- Você pode separá-las por ID, basta usar um id diferente para cada uma delas. -->
+<!-- A propriedade CHECKED é para a opção já inicar selecionada/marcada. -->
+<!-- Segue os exemplos abaixo: -->
+		  <input type="checkbox" id="esporte-1" value="vol" name="esporte" checked>Vôlei
+		  <input type="checkbox" id="esporte-2" value="fut" name="esporte">Futebol
+		  <input type="checkbox" id="esporte-3" value="bas" name="esporte">Basquete
+	</form>
+
+
+	<form action="" method="get">
+		<input type="radio">
+<!-- Os RADIO button são as bolinhas onde só pode escolher uma opção. -->
+		<input type="radio" id="hub1" name="hub" value="sp">São Paulo
+		<input type="radio" id="hub2" name="hub" value="bh">Belo Horizonte
+		<label for="hub3"><input type="radio" id="hub3" name="hub" value="fl">Florianopólis</label>
+		<label for="hub4"><input type="radio" id="hub4" name="hub" value="al">Alagoas</label>
+	</form>
+<!-- Existe uma boa prática interessante para os RADIO button, que é colocar todas as opçoes dentro de uma <label for=""></label> basta pegar a id da opção desejada e inserir no for da tag LABEL. Dessa forma todo o texto contido dentro da label é clicável e ajuda o usuário a clicar em qualquer parte do texto e selecionar. Observe a opção Florianopólis e Alagoas. -->
+
+<!-- DROPDOWN LIST: É um botão clicável que oferece várias opções de seleção, onde o usuário escolhe apenas uma delas. -->
+<!-- Bastante utilizado em cadastro. -->
+	<form action="" method="get">
+		<select name="estado" id="dropdown-estado" required> 
+			<option value="sp">São Paulo</option>
+			<option value="bh">Belo Horizonte</option>
+			<option value="ba">Bahia</option>
+			<option value="mg">Minas Gerais</option>
+		</select>
+	</form>
+
+<!-- O input do tipo password é um campo de senha, onde a medida que o usuárioa digita, no lugar de exibir os número ou letras digitadas por ele, bolinhas serão exibidas. -->
+	<form action="" method="get">
+		<input type="password" required>
+	</form>
+
+
+<!-- Com input FILe é possível enviar um arquivo ou uma imagem -->
+	<form action="" method="post">
+		<input type="file" name="" id="">
+	</form>
+<!-- Ponto importante sobre o método POST para envio de arquivos e imagens, é preciso utilizar uma propriedade chamada ENCTYPE com o valor "multipart/form-data" -->
+<!-- Dessa forma você diz ao sitema que a submissão dos dados não é somente de textos, que também é possível enviar arquivos -->
+
+
+<!-- Botão para submeter as informações. Obs: É possível colocar várias propriedades dentro desse botão -->
+	<form action="">
+		<button type="submit">Enviar</button>
+	</form>
+
+</body>
+</html>
+
+ <!-- 
+	Estes são os types que podem ser usados de acordo com a aplicação do campo input:
+	
+	button : define um botão;
+	checkbox : permite que o usuário selecione ZERO ou MAIS opções de um número limitado de escolhas;
+	color : campos de entrada que devem conter uma cor para selecionar;
+	date : campos de entrada que devem conter uma data;
+	datetime-local : campo de entrada de data e hora, sem fuso horário;
+	email : campos de entrada que devem conter um endereço de e-mail;
+	file : campo de seleção de arquivo e um botão "Procurar" para uploads de arquivos;
+	month : permite ao usuário selecionar um mês e ano;
+	number : define um campo de entrada numérico;
+	password : os caracteres do campo de senha são mascarados (mostrados como asteriscos ou círculos);
+	radio : permite que um usuário selecione APENAS UMA de um número limitado de opções;
+	range : define um controle para inserir um número (como um controle deslizante). Intervalo padrão é de 0 a 100;
+	reset : redefinirá todos os valores do formulário para seus valores padrão;
+	search : usado para campos de pesquisa;
+	submit : envia dados de formulário a um manipulador de formulários(especificado na action do form );
+	tel : campos de entrada que devem conter um número de telefone;
+	text : campo de entrada de texto de linha única;
+	time : permite que o usuário selecione um horário (sem fuso horário);
+	url : campos de entrada que devem conter um endereço URL;
+	week : permite ao usuário selecionar uma semana e um ano.
+ -->
+
+ <!--
+	O valor default de um type , sempre será text . Portanto, é preciso especificar de acordo com a sua necessidade.
+ -->
+
+ <!-- 
+	Atributos que são propriedades inseridas para os inputs HTML:
+	É possível adicionar funcionalidades ao formulário com os seguintes atributos abaixo:
+
+	value : especifica um valor inicial para um campo de entrada;
+	readonly : especifica que um campo de entrada é somente leitura;
+	disabled : especifica que um campo de entrada deve ser desativado;
+	size : especifica a largura visível, em caracteres, de um campo de entrada;
+	maxlength : especifica o número máximo de caracteres permitidos em um campo de entrada;
+	min e max : especificam os valores mínimo e máximo para um campo de entrada;
+	multiple : especifica que o usuário tem permissão para inserir mais de um valor em um campo de entrada;
+	pattern : especifica uma expressão regular em relação à qual o valor do campo de entrada é verificado;
+	placeholder : especifica uma dica curta que descreve o valor esperado de um campo de entrada;
+	required : especifica que um campo de entrada deve ser preenchido antes de enviar o formulário;
+	step : especifica os intervalos de números válidos para um campo de entrada;
+	autofocus : especifica que um campo de entrada deve obter foco automaticamente quando a página é carregada;
+	height e width : especificam a altura e a largura de um elemento;
+	autocomplete : especifica se um campo de entrada deve ter o preenchimento automático ativado ou desativado.
+  -->
