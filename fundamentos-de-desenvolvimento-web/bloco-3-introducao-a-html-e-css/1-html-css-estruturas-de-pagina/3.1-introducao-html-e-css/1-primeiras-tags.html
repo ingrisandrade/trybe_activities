@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Primeiras tags</title>
+<!--
+  No HEAD  ficam as configurações da página (não são 'visíveis'), como caracteres, títilo, css...
+
+-->
+</head>
+<body>
+
+<!-- Paragráfo de exemplo de link interno -->
+  <p><a href="#paragrafo">Exemplo de link interno</a></p>
+<!--
+  No BODY estão todas as tags que aparecerão na página em si (vísíveis).
+-->
+<!--
+  HTML é uma linguagem de marcação de texto, que o browser consegue interpretar;
+  Pensar no HTML como se fosse o esqueleto da página, no HTML será criada a estrutura de como a página vai ser exibida;
+  Estrutura primária, com diversas tags para representar as informações que queremos transmitir;
+  Tim Berners-Lee e Robert Cailliau -> 1989;
+  Objetivo: Ajudar no compartilhamento de informação;
+  Principais versões: 2.0 (1995), 3.2 (1997), 4.01 (1999), HTML5 (2014);
+-->
+<!-- A tag h1(título máximo) vai até o h6(título mínimo) servem como títulos das páginas; -->
+<h1>Exemplo de uma tag h1</h1>
+<br>
+<h2>Exemplo de uma tag h2</h2>
+<br>
+<h3>Exemplo de uma tag h3</h3>
+<br>
+<h4>Exemplo de uma tag h4</h4>
+<br>
+<h5>Exemplo de uma tag h5</h5>
+<br>
+<h6>Exemplo de uma tag h6</h6>
+
+<!-- A tag strong da ênfase na palavra/frase -->
+<p>Frase sem strong <strong>frase com a tag strong</strong></p>
+
+<!-- A tag EM deixa o texto em itálico -->
+<p>Frase sem itálico <em>frase com itálico</em></p>
+
+<!-- A tag UL é uma lista não ordanada -->
+<ul>
+  <li>Exemplo de lista não ordenada</li>
+  <li>Exemplo de lista não ordenada</li>
+  <li>Exemplo de lista não ordenada</li>
+</ul>
+
+<!-- A tag OL é uma lista ordenada numericamente -->
+<ol>
+  <li>Exemplo de lista ordenada</li>
+  <li>Exemplo de lista ordenada</li>
+  <li>Exemplo de lista ordenada</li>
+</ol>
+
+<!--
+  A tag IMG representa uma imagem dentro do HTML;
+  No atributo src é colocado o endereço da imagem ou a referência de um arquivo que está dentro de um diretório;
+  O atributo width representa a largura de uma tag, neste caso, da imagem;
+  O atributo ALT serve para adicionar uma descrição da imagem
+-->
+<img src="https://ciclovivo.com.br/wp-content/uploads/2018/10/iStock-536613027.jpg" alt="Flores amarelas" width="200px">
+
+<!--
+  A tag A é uma âncora e constroi um hiper link tanto para links externos quanto para navegar em links internos;
+  No atributo HREF é colocado a pasta ou arquivo.extensão para ser linkado;
+  O atributo title serve para adicionar um título para o link. O título só será exibido quando o mouse estiver em cima no link;
+  O atributo TARGET com a pro priedade _blank, abre uma nova aba em branco 
+-->
+<a href="https://betrybe.com" target="_blank" title="Saiba Mais">Trybe</a>
+
+<!--
+  Para linkar um conteúdo interno basta que colocar uma id em determinada tag, selecionar essa id e acdicioná-la na tag a que está em outra tag, observe o primeiro paragráfo deste documento.
+-->
+<p id="paragrafo">Esse parágrafo com id é um exemplo de link interno</p>
+</body>
+</html>
