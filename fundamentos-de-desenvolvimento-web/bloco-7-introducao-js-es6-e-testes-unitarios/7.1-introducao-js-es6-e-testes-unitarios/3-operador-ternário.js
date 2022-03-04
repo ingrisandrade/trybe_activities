@@ -28,8 +28,7 @@ const checkIfElse = (age) => {
   };
   
   const checkTernary = (age) => (
-    age >= 18 ? `Você tem idade para dirigir!` : `Você ainda não tem idade para dirigir...`;
-  );
+    age >= 18 ? `Você tem idade para dirigir!` : `Você ainda não tem idade para dirigir...`);
   
   // ------------------------
   
