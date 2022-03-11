@@ -1,3 +1,5 @@
+// Adicionando elementos no HTML de forma dinâmica com JS, nesse caso é uma lista.
+
 let ingredientItems = [
  '500g de feijão carioquinha cozido',
  '200g de toucinho',
@@ -17,9 +19,25 @@ for (let index = 0; index < ingredientItems.length; index += 1) {
 
   let ingredientListItem = document.createElement('li');
   ingredientListItem.innerText = ingredient;
+  ingredientListItem.className = 'ingredients-list-item'; // Classe criada para ser recuperada na variável criada para a remoção de um dos elementos da lista.
 
   ingredientList.appendChild(ingredientListItem);
 }
+
+// Removendo elementos no HTML de forma dinâmica com JS, nesse caso será removido apenas um elemento dentro da lista.
+// O elemento removido será o toucinho.
+
+const ingredientListItems = document.querySelectorAll('.ingredients-list-item');
+// para recuperar todos os itens da lista foi necessário criar uma classe na função anterior que criou a lista.
+for (let index = 0; index < ingredientListItems.length; index +=1) {
+  let element = ingredientListItems[index] // recuper o elemento html que está dentro do array
+
+  if (element.innerText.includes('toucinho')) {
+    ingredientList.removeChild(element);
+  }
+}
+
+// Adicionando elementos no HTML de forma dinâmica com JS, nesse caso é uma lista.
 
 let preparationList = [
   'Coloque o óleo em uma panela e doure a cebola, acrescente o bacon e frite bem.',
@@ -37,11 +55,3 @@ for (let index = 0; index < preparationList.length; index += 1) {
 
   preparationLists.appendChild(listRecipe);
 }
-
-/*
-No console do navegador: primeiro, foi selecionado o elemento div utilizando o seu id , 'start'. Na sequência, aplicadas as propriedades nextSibling e nextElementSibling . Você pode ver que, nextSibling retornará o texto "nó" que representa o próximo nó do DOM a partir da div , enquanto que, nextElementSibling retornará o próximo elemento propriamente, ou seja, o elemento <p> .
-
-console.log(document.getElementById('start').nextSibling) // nó
-
-console.log(document.getElementById('start').nextElementSibling) // <p>elemento</p>
-*/
