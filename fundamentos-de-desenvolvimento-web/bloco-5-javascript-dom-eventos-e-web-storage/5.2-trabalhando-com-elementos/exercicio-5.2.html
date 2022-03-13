@@ -83,21 +83,21 @@
       }
       addElement(elementH1, createMainElement('main-content'));
 
-      // 3. Função que adiciona a tag section com a classe center-content como filho da tag main.
+      // 3. 5. 6. Função que adiciona 3 tags section com as classes center-content, left-content e right-content, respectivamente, como filhos da tag main.
 
       const main = document.querySelector('.main-content');
 
-      function createSectionElement(section) {
+      function createSectionElement(classes) {
         let newSection = document.createElement('section');
-        newSection.className = 'center-content';
+        newSection.className = classes;
         return newSection;
       }
 
-      function addElement(parent, child) {
-        parent.appendChild(child);
+      let classes = ['center-content', 'left-content', 'right-content'];
+      for (let classe of classes) {
+        let element = createSectionElement(classe);
+        addElement(main, element);
       }
-      addElement(main, createSectionElement('center-content'));
-
 
       // 4. Função que adiciona tag p (com algum texto) como filho da section criada no passo 3
       
@@ -110,9 +110,58 @@
       }
 
       function addElementP(parent, child) {
-      parent.appendChild(child);
+        parent.appendChild(child);
       }
       addElement(section1, createParagraph('Texto de parágrafo teste'));
+
+      // 7. Função que adiciona uma imagem com src configurado com valor https://picsum.photos/200 e classe small-image. Esse elemento deve ser filho do section criado no passo 5 (left-content).
+
+      const sectionTwo = document.querySelector('.left-content');
+
+      function createImage(image) {
+        let newImg = document.createElement('img');
+        newImg.src = 'https://picsum.photos/200';
+        newImg.className = 'small-image';
+        return newImg;
+      }
+
+      function addElement(parent, child) {
+        parent.appendChild(child);
+      }
+      addElement(sectionTwo, createImage('small-image'));
+
+      // 8. Função que adiciona uma lista não ordenada com os valores de 1 a 10 por extenso, como valores da lista. Essa lista deve ser filha de section criada no passo 6(right-content).
+
+      const sectionThree = document.querySelector('.right-content');
+
+      function createList(list) {
+        let newList = document.createElement('li');
+        newList.innerText = list;
+        return newList;
+      }
+
+      let list = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
+      for (let item of list) {
+        let element = createList(item);
+        addElement(sectionThree, element);
+      }
+
+      // 9. Função que adiciona 3 tags h3, todas sendo filhas do main criado com passo 2.
+      
+      
+
+      function createTitulo(classes) {
+        let newTitulo = document.createElement('h3');
+        newTitulo.className = classes;
+        return newTitulo;
+      }
+
+      let classe = ['title-one', 'title-two', 'title-three'];
+      for (let item of classe) {
+        let element = createTitulo(item);
+        addElement(main, element);
+      }
+
 
     </script>
   </body>
