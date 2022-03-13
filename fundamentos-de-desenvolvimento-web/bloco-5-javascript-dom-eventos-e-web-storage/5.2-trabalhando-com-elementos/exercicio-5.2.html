@@ -59,7 +59,7 @@
     <script>
       const elementH1= document.querySelector('body');
 
-      // Essa função adiciona a tag h1 como filho da tag body.
+      // 1 - Função que adiciona tag h1 como filho da tag body.
       function createTextElement (tagH1) {
         let newH1 = document.createElement('h1');
         newH1.textContent = 'Exercício 5.2 - JavaScript DOM';
@@ -71,7 +71,7 @@
       }
       addElement(elementH1, createTextElement('Exercício 5.2 - JavaScript DOM'))
 
-      // Essa função adiciona a tag main com a classe main-content como filho da tag body.
+      // 2. Função que adiciona a tag main com a classe main-content como filho da tag body.
       function createMainElement (main) {
         let newMain = document.createElement('main');
         newMain.className = 'main-content';
@@ -83,7 +83,8 @@
       }
       addElement(elementH1, createMainElement('main-content'));
 
-      // Essa função adiciona a tag section com a classe center-content como filho da tag main.
+      // 3. Função que adiciona a tag section com a classe center-content como filho da tag main.
+
       const main = document.querySelector('.main-content');
 
       function createSectionElement(section) {
@@ -97,6 +98,21 @@
       }
       addElement(main, createSectionElement('center-content'));
 
+
+      // 4. Função que adiciona tag p (com algum texto) como filho da section criada no passo 3
+      
+      const section1 = document.querySelector('.center-content');
+
+      function createParagraph(text) {
+      let newParagraph = document.createElement('p');
+      newParagraph.textContent = 'Texto de parágrafo teste';
+      return newParagraph;
+      }
+
+      function addElementP(parent, child) {
+      parent.appendChild(child);
+      }
+      addElement(section1, createParagraph('Texto de parágrafo teste'));
 
     </script>
   </body>
