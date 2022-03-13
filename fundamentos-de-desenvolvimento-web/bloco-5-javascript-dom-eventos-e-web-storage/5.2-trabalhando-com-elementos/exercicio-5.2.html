@@ -83,6 +83,20 @@
       }
       addElement(elementH1, createMainElement('main-content'));
 
+      // Essa função adiciona a tag section com a classe center-content como filho da tag main.
+      const main = document.querySelector('.main-content');
+
+      function createSectionElement(section) {
+        let newSection = document.createElement('section');
+        newSection.className = 'center-content';
+        return newSection;
+      }
+
+      function addElement(parent, child) {
+        parent.appendChild(child);
+      }
+      addElement(main, createSectionElement('center-content'));
+
 
     </script>
   </body>
