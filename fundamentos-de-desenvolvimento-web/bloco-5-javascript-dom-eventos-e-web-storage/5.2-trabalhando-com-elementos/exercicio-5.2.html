@@ -110,9 +110,23 @@
       }
 
       function addElementP(parent, child) {
-      parent.appendChild(child);
+        parent.appendChild(child);
       }
       addElement(section1, createParagraph('Texto de parágrafo teste'));
+
+      // Função que adiciona a tag section com classe left-content como filho da tag main criada no passo 2.
+
+
+      function createParagraphTwo(classe) {
+        let newParagraphTwo = document.createElement('section');
+        newParagraphTwo.className = 'left-content';
+        return newParagraphTwo;
+      }
+
+      function addElement(parent, child) {
+        parent.appendChild(child);
+      }
+      addElement(main, createParagraphTwo('left-content'));
 
     </script>
   </body>
