@@ -83,21 +83,21 @@
       }
       addElement(elementH1, createMainElement('main-content'));
 
-      // 3. Função que adiciona a tag section com a classe center-content como filho da tag main.
+      // 3. Função que adiciona 3 tags section com as classes center-content, left-content e right-content, respectivamente, como filhos da tag main.
 
       const main = document.querySelector('.main-content');
 
-      function createSectionElement(section) {
+      function createSectionElement(classes) {
         let newSection = document.createElement('section');
-        newSection.className = 'center-content';
+        newSection.className = classes;
         return newSection;
       }
 
-      function addElement(parent, child) {
-        parent.appendChild(child);
+      let classes = ['center-content', 'left-content', 'right-content'];
+      for (let classe of classes) {
+        let element = createSectionElement(classe);
+        addElement(main, element);
       }
-      addElement(main, createSectionElement('center-content'));
-
 
       // 4. Função que adiciona tag p (com algum texto) como filho da section criada no passo 3
       
@@ -113,20 +113,6 @@
         parent.appendChild(child);
       }
       addElement(section1, createParagraph('Texto de parágrafo teste'));
-
-      // Função que adiciona a tag section com classe left-content como filho da tag main criada no passo 2.
-
-
-      function createParagraphTwo(classe) {
-        let newParagraphTwo = document.createElement('section');
-        newParagraphTwo.className = 'left-content';
-        return newParagraphTwo;
-      }
-
-      function addElement(parent, child) {
-        parent.appendChild(child);
-      }
-      addElement(main, createParagraphTwo('left-content'));
 
     </script>
   </body>
