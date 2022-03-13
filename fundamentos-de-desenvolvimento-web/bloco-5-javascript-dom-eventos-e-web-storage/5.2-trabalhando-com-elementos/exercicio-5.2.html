@@ -146,6 +146,22 @@
         addElement(sectionThree, element);
       }
 
+      // 9. Função que adiciona 3 tags h3, todas sendo filhas do main criado com passo 2.
+      
+      
+
+      function createTitulo(classes) {
+        let newTitulo = document.createElement('h3');
+        newTitulo.className = classes;
+        return newTitulo;
+      }
+
+      let classe = ['title-one', 'title-two', 'title-three'];
+      for (let item of classe) {
+        let element = createTitulo(item);
+        addElement(main, element);
+      }
+
 
     </script>
   </body>
