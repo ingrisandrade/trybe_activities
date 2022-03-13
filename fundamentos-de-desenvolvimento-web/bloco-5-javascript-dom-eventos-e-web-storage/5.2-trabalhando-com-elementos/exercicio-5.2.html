@@ -130,6 +130,23 @@
       }
       addElement(sectionTwo, createImage('small-image'));
 
+      // 8. Função que adiciona uma lista não ordenada com os valores de 1 a 10 por extenso, como valores da lista. Essa lista deve ser filha de section criada no passo 6(right-content).
+
+      const sectionThree = document.querySelector('.right-content');
+
+      function createList(list) {
+        let newList = document.createElement('li');
+        newList.innerText = list;
+        return newList;
+      }
+
+      let list = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
+      for (let item of list) {
+        let element = createList(item);
+        addElement(sectionThree, element);
+      }
+
+
     </script>
   </body>
 </html>
