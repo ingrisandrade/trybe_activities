@@ -71,6 +71,17 @@
       }
       addElement(elementH1, createTextElement('Exercício 5.2 - JavaScript DOM'))
 
+      // Essa função adiciona a tag main com a classe main-content como filho da tag body.
+      function createMainElement (main) {
+        let newMain = document.createElement('main');
+        newMain.className = 'main-content';
+        return newMain;
+      }
+      
+      function addElement(parent, child) {
+        parent.appendChild(child);
+      }
+      addElement(elementH1, createMainElement('main-content'));
 
 
     </script>
