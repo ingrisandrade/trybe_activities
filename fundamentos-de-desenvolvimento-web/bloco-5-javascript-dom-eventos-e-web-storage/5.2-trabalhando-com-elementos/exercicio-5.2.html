@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      const elementH1= document.querySelector('body');
+
+      // 1 - Função que adiciona tag h1 como filho da tag body.
+      function createTextElement (tagH1) {
+        let newH1 = document.createElement('h1');
+        newH1.textContent = 'Exercício 5.2 - JavaScript DOM';
+        return newH1;
+      }
+
+      function addElement(parent, child) {
+        parent.appendChild (child);
+      }
+      addElement(elementH1, createTextElement('Exercício 5.2 - JavaScript DOM'))
+
+      // 2. Função que adiciona a tag main com a classe main-content como filho da tag body.
+      function createMainElement (main) {
+        let newMain = document.createElement('main');
+        newMain.className = 'main-content';
+        return newMain;
+      }
+      
+      function addElement(parent, child) {
+        parent.appendChild(child);
+      }
+      addElement(elementH1, createMainElement('main-content'));
+
+      // 3. Função que adiciona a tag section com a classe center-content como filho da tag main.
+
+      const main = document.querySelector('.main-content');
+
+      function createSectionElement(section) {
+        let newSection = document.createElement('section');
+        newSection.className = 'center-content';
+        return newSection;
+      }
+
+      function addElement(parent, child) {
+        parent.appendChild(child);
+      }
+      addElement(main, createSectionElement('center-content'));
+
+
+      // 4. Função que adiciona tag p (com algum texto) como filho da section criada no passo 3
+      
+      const section1 = document.querySelector('.center-content');
+
+      function createParagraph(text) {
+      let newParagraph = document.createElement('p');
+      newParagraph.textContent = 'Texto de parágrafo teste';
+      return newParagraph;
+      }
+
+      function addElementP(parent, child) {
+      parent.appendChild(child);
+      }
+      addElement(section1, createParagraph('Texto de parágrafo teste'));
+
+    </script>
+  </body>
+</html>
