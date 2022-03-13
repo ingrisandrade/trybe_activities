@@ -83,7 +83,7 @@
       }
       addElement(elementH1, createMainElement('main-content'));
 
-      // 3. Função que adiciona 3 tags section com as classes center-content, left-content e right-content, respectivamente, como filhos da tag main.
+      // 3. 5. 6. Função que adiciona 3 tags section com as classes center-content, left-content e right-content, respectivamente, como filhos da tag main.
 
       const main = document.querySelector('.main-content');
 
@@ -113,6 +113,22 @@
         parent.appendChild(child);
       }
       addElement(section1, createParagraph('Texto de parágrafo teste'));
+
+      // 7. Função que adiciona uma imagem com src configurado com valor https://picsum.photos/200 e classe small-image. Esse elemento deve ser filho do section criado no passo 5 (left-content).
+
+      const sectionTwo = document.querySelector('.left-content');
+
+      function createImage(image) {
+        let newImg = document.createElement('img');
+        newImg.src = 'https://picsum.photos/200';
+        newImg.className = 'small-image';
+        return newImg;
+      }
+
+      function addElement(parent, child) {
+        parent.appendChild(child);
+      }
+      addElement(sectionTwo, createImage('small-image'));
 
     </script>
   </body>
