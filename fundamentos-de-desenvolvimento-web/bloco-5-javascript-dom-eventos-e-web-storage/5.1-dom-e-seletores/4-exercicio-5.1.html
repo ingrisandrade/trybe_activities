@@ -52,7 +52,7 @@
 
     function modifyText () {
       const textParagraph = document.querySelectorAll('p')[1];
-      textParagraph.innerText = 'Me vejo daqui a dois anos nos EUA obtendo novas experiências e conquistando espaços de reconhecimento referente à minha contribuição para todas as pessoas que queiram entrar no mundo da tecnologiaaaaaa.';
+      textParagraph.innerText = 'Me vejo daqui a dois anos nos EUA obtendo novas experiências e conquistando espaços de reconhecimento referente à minha contribuição para todas as pessoas que queiram entrar no mundo da tecnologia.';
     }
     modifyText();
 
@@ -79,10 +79,21 @@
     correctText();
 
   // 5.Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
-    
+    function capitalLetters() {
+      const modifyLetters = document.querySelectorAll('p')[0];
+      modifyLetters.innerText = modifyLetters.innerText.toUpperCase();
+    }
+    capitalLetters();
 
   // 6.Crie uma função que exiba o conteúdo de todas as tags <p> no console.
-  
+
+    function displayContent() {
+      const displayParagraph = document.querySelectorAll('p');
+      for (let index = 0; index < displayParagraph.length; index += 1) {
+      console.log(displayParagraph[index].innerText);
+      }
+    }
+    displayContent();
 
     
     </script>
