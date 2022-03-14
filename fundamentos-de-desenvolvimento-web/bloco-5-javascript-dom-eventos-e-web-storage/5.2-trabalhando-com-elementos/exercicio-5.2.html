@@ -19,7 +19,7 @@
       }
 
       .main-content .center-content {
-        background-color: red;
+        background-color: rgb(109, 192, 106);
         width: 50%;
         margin-left: auto;
         margin-right: auto;
@@ -47,7 +47,7 @@
         background-color: blue;
         width: 60%;
         margin-left: auto;
-        margin-right: 0;
+        margin-right: auto;
       }
 
       .main-content .description {
@@ -124,26 +124,45 @@
 
       for (let index = 1; index <= 3; index += 1) {
       let newTitulo = document.createElement('h3');
-        newTitulo.innerText = `titulo ${index}`;
+        newTitulo.innerText = `Titulo ${index}`;
         main.appendChild(newTitulo);
       }
 
       // // Alterações e remoções.
 
-      // // 1. Adiciona a classe title na tag h1 craida.
-      // const classH1 = document.querySelector('h1');
-      // classH1.className = 'title';
+      // 1. Adiciona a classe title na tag h1 craida.
+      const classH1 = document.querySelector('h1');
+      classH1.className = 'title';
 
-      // // 2. Adiciona a classe description nas 3 tags h3 criadas.
-      // const classH3 = document.querySelectorAll('h3');
+      // 2. Adiciona a classe description nas 3 tags h3 criadas.
+      const classH3 = document.querySelectorAll('h3');
 
-      // for (let index = 0; index < 3; index += 1) {
-      //   classH3[index].className = 'description';
-      // }
+      for (let index = 0; index < classH3.length; index += 1) {
+      classH3[index].className = 'description';
+      }
 
-      // // 3. Remove a section criada no passo 5(left-content).
+      // 3. Remove a section criada no passo 5(left-content).
 
-      // function 
+      const removeSectionTwo = document.querySelector('.left-content');
+      removeSectionTwo.remove();
+
+      // 4. Centraliza a section criado no passo 6 (right-content). Dica: para centralizar, basta configurar o margin-right: auto da section ; CSS
+
+      // 5. Troque a cor de fundo do elemento pai da section criada no passo 3 (aquela que possui a classe center-content ) para a cor verde; CSS
+
+      // 6. Remova os dois últimos elementos ( nove e dez ) da lista criada no passo 8.
+
+      const rmItemList = document.querySelectorAll('li');
+
+      for (let index = 0; index < rmItemList.length; index += 1) {
+        let element = rmItemList[index]
+
+        if (element.innerText.includes('Nove')) {
+          sectionThreeList.removeChild(element);
+        } if (element.innerText.includes('Dez')) {
+          sectionThreeList.removeChild(element);
+        }
+      }
 
     </script>
   </body>
