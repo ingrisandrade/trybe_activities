@@ -92,27 +92,20 @@
       sectionTwo.className = 'left-content';
       main.appendChild(sectionTwo);
 
-      // 2. Adiciona a tag section com a classe right-content como filho da tag main criada no passo 2;
+      // 6. Adiciona a tag section com a classe right-content como filho da tag main criada no passo 2;
 
       let sectionThree = document.createElement('section');
       sectionThree.className = 'right-content';
       main.appendChild(sectionThree);
 
-      // // 7. Função que adiciona uma imagem com src configurado com valor https://picsum.photos/200 e classe small-image. Esse elemento deve ser filho do section criado no passo 5 (left-content).
+      // // 7. Adiciona uma imagem com src configurado com valor https://picsum.photos/200 e classe small-image. Esse elemento deve ser filho do section criado no passo 5 (left-content).
 
-      // const sectionTwo = document.querySelector('.left-content');
-
-      // function createImage(image) {
-      //   let newImg = document.createElement('img');
-      //   newImg.src = 'https://picsum.photos/200';
-      //   newImg.className = 'small-image';
-      //   return newImg;
-      // }
-
-      // function addElement(parent, child) {
-      //   parent.appendChild(child);
-      // }
-      // addElement(sectionTwo, createImage('small-image'));
+      const sectionTwoClass = document.querySelector('.left-content');
+      
+      let newImg = document.createElement('img');
+      newImg.src = 'https://picsum.photos/200';
+      newImg.className = 'small-image';
+      sectionTwoClass.appendChild(newImg);
 
       // // 8. Função que adiciona uma lista não ordenada com os valores de 1 a 10 por extenso, como valores da lista. Essa lista deve ser filha de section criada no passo 6(right-content).
 
