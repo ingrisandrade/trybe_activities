@@ -86,6 +86,18 @@
       newParagraph.textContent = 'Este é um paragráfo';
       sectionOne.appendChild(newParagraph);
 
+      // 5. Adiciona a tag section com a classe left-content como filho da tag main criada no passo 2;
+
+      let sectionTwo = document.createElement('section');
+      sectionTwo.className = 'left-content';
+      main.appendChild(sectionTwo);
+
+      // 2. Adiciona a tag section com a classe right-content como filho da tag main criada no passo 2;
+
+      let sectionThree = document.createElement('section');
+      sectionThree.className = 'right-content';
+      main.appendChild(sectionThree);
+
       // // 7. Função que adiciona uma imagem com src configurado com valor https://picsum.photos/200 e classe small-image. Esse elemento deve ser filho do section criado no passo 5 (left-content).
 
       // const sectionTwo = document.querySelector('.left-content');
