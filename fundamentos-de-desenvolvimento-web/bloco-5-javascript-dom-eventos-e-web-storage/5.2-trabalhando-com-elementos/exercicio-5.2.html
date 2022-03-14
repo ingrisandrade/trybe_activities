@@ -147,21 +147,33 @@
       }
 
       // 9. Função que adiciona 3 tags h3, todas sendo filhas do main criado com passo 2.
-      
-      
 
-      function createTitulo(classes) {
+      function createTitulo(titulo) {
         let newTitulo = document.createElement('h3');
-        newTitulo.className = classes;
+        newTitulo.innerHTML = titulo;
         return newTitulo;
       }
 
-      let classe = ['title-one', 'title-two', 'title-three'];
-      for (let item of classe) {
+      let titulo = ['Título 1', 'Título 2', 'Título 3'];
+      for (let item of titulo) {
         let element = createTitulo(item);
         addElement(main, element);
       }
 
+      // Alterações e remoções.
+
+      // Adiciona a classe title na tag h1 craida.
+      const classH1 = document.querySelector('h1');
+      classH1.className = 'title';
+
+      // Adiciona a classe description nas 3 tags h3 criadas.
+      const classH3 = document.querySelectorAll('h3');
+
+      for (let index = 0; index < 3; index += 1) {
+        classH3[index].className = 'description';
+      }
+
+      
 
     </script>
   </body>
