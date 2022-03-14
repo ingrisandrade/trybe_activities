@@ -57,20 +57,20 @@
   </head>
   <body>
     <script>
-      // 1 - Função que adiciona tag h1 como filho da tag body.
+      // 1 - Adiciona tag h1 como filho da tag body.
       const elementH1= document.querySelector('body');
 
       let newH1 = document.createElement('h1');
       newH1.innerText = 'Exercício 5.2 - JavaScript DOM';
       elementH1.appendChild(newH1);
 
-      // 2. Função que adiciona a tag main com a classe main-content como filho da tag body.
+      // 2. FAdiciona a tag main com a classe main-content como filho da tag body.
       
       let newMain = document.createElement('main');
       newMain.className = 'main-content';
       elementH1.appendChild(newMain);
 
-      // 3. Função que adiciona a tag section com a classe center-content como filha da tag main.
+      // 3. Adiciona a tag section com a classe center-content como filha da tag main.
 
       const main = document.querySelector('.main-content');
 
@@ -78,7 +78,7 @@
       newSectionOne.className = 'center-content';
       main.appendChild(newSectionOne)
 
-      // // 4. Função que adiciona tag p (com algum texto) como filho da section criada no passo 3
+      // // 4. Adiciona tag p (com algum texto) como filho da section criada no passo 3
       
       const sectionOne = document.querySelector('.center-content');
 
@@ -107,35 +107,26 @@
       newImg.className = 'small-image';
       sectionTwoClass.appendChild(newImg);
 
-      // // 8. Função que adiciona uma lista não ordenada com os valores de 1 a 10 por extenso, como valores da lista. Essa lista deve ser filha de section criada no passo 6(right-content).
+      // // 8. Adiciona uma lista não ordenada com os valores de 1 a 10 por extenso, como valores da lista. Essa lista deve ser filha de section criada no passo 6(right-content).
 
-      // const sectionThree = document.querySelector('.right-content');
+      const sectionThreeList = document.querySelector('.right-content');
 
-      // function createList(list) {
-      //   let newList = document.createElement('li');
-      //   newList.innerText = list;
-      //   return newList;
-      // }
+      let list = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
+      for (let index = 0; index < list.length; index += 1) {
+        let itemList = list[index];
 
-      // let list = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
-      // for (let item of list) {
-      //   let element = createList(item);
-      //   addElement(sectionThree, element);
-      // }
+        let newList = document.createElement('li');
+        newList.innerText = itemList;
+        sectionThreeList.appendChild(newList);
+      }
 
-      // // 9. Função que adiciona 3 tags h3, todas sendo filhas do main criado com passo 2.
+      // // 9. Adiciona 3 tags h3, todas sendo filhas do main criado com passo 2.
 
-      // function createTitulo(titulo) {
-      //   let newTitulo = document.createElement('h3');
-      //   newTitulo.innerHTML = titulo;
-      //   return newTitulo;
-      // }
-
-      // let titulo = ['Título 1', 'Título 2', 'Título 3'];
-      // for (let item of titulo) {
-      //   let element = createTitulo(item);
-      //   addElement(main, element);
-      // }
+      for (let index = 1; index <= 3; index += 1) {
+      let newTitulo = document.createElement('h3');
+        newTitulo.innerText = `titulo ${index}`;
+        main.appendChild(newTitulo);
+      }
 
       // // Alterações e remoções.
 
