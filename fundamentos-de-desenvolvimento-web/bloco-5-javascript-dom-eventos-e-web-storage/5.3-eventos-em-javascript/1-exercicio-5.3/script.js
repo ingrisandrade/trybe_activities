@@ -16,3 +16,12 @@ function addNewClass(event) {
 firstLi.addEventListener('click', addNewClass);
 secondLi.addEventListener('click', addNewClass);
 thirdLi.addEventListener('click', addNewClass);
+
+// 3. Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
+// com a classe 'tech';
+
+ function changeText(event) {
+   const techElement = document.querySelector('.tech');
+   techElement.innerText = event.target.value;
+ }
+ input.addEventListener('input', changeText);
