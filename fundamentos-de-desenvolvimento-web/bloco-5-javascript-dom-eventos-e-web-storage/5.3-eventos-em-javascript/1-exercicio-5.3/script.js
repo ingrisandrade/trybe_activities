@@ -25,3 +25,16 @@ thirdLi.addEventListener('click', addNewClass);
    techElement.innerText = event.target.value;
  }
  input.addEventListener('input', changeText);
+
+// 4. Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
+// redirecione para alguma página;
+// 4.1. Que tal redirecionar para seu portfólio?
+
+function webPage() {
+  window.location.replace('https://blog.betrybe.com/');
+}
+myWebpage.addEventListener('dblclick', webPage);
+
+/* myWebpage.addEventListener('dblclick', function() {
+  window.location.replace('https://blog.betrybe.com/');
+}) */
