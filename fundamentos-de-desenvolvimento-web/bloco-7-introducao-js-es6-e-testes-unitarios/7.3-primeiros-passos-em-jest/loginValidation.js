@@ -25,3 +25,14 @@ const greetingMessage = (user) => {
   module.exports = { greetingMessage, loginErrorMessage, verifyCredentials }
 
 // Neste exemplo o teste esperava receber como valor um objeto contendo uma pessoa usuária com o nome "Joana", mas ao invés disso recebeu "Bob".
+
+// REPRODUÇÃO DA AULA DE TESTES COM JEST - PARTE I
+const numeros = (array) => {
+  for (let i = 0; i < array.length; i += 1) {
+    if (typeof array[i] !== 'number') {
+      return false;
+    }
+  }
+  return true;
+}
+ module.exports = numeros;

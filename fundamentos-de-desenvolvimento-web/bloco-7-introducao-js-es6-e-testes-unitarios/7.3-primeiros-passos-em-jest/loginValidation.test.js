@@ -33,3 +33,13 @@ const {
       );
     });  
   });
+
+// REPRODUÇÃO DA AULA DE TESTES COM JEST - PARTE I
+
+const numeros = require('./loginValidation');
+
+describe('Requisito 1', () => {
+  test('A função recebe [1, 2, 3, 4, 5] e retorna true', () => {
+    expect(true).toEqual(numeros([1, 2, 3, 4, 5]));
+  })
+})
