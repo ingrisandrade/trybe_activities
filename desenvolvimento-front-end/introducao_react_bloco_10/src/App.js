@@ -1,8 +1,11 @@
+import HelloWorld from './HelloWorld';
+
 function App() {
   return (
     <>
     <h1>Hello, world!</h1>
     <h2>Test with two HTML elements.</h2>
+    <HelloWorld />
     </>
   );
 }
