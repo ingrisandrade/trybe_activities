@@ -15,7 +15,7 @@ class Task extends Component {
         { commitments.map((task) => <h1 key={task}>Commitment { task }</h1>) }
 
         <ul>
-          { commitments.map((task) => <li> { task } </li> ) };
+          { commitments.map((task) => <li> { task } </li> ) }
         </ul>
 
       </div>
