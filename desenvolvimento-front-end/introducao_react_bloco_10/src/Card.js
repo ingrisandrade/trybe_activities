@@ -1,9 +1,10 @@
 import React, { Component } from "react";
+import './card.css';
 
 class Card extends Component {
   render () {
     return(
-      <h1>Fundamentals</h1>
+      <h1 className="card">Fundamentals</h1>
     );
   };
 };
