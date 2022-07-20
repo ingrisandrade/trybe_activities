@@ -1,4 +1,6 @@
 import React from "react";
+import UserName from "./UserName";
+import UserOtherInfo from "./UserOtherInfo";
 
 class Table extends React.Component {
   render() {
