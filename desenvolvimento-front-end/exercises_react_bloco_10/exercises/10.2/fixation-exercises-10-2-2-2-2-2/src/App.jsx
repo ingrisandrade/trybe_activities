@@ -2,8 +2,7 @@
 
 function App() {
   return (
-    <div>
-    </div>
+    <span>My table in React</span>
   );
 }
 
