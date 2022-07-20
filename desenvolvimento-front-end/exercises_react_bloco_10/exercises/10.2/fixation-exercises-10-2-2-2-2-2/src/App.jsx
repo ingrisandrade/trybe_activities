@@ -1,8 +1,9 @@
-
+import React from "react";
+import Table from "./Table";
 
 function App() {
   return (
-    <span>My table in React</span>
+    <Table />
   );
 }
 
