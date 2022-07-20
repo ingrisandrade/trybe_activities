@@ -2,8 +2,9 @@ import React from "react";
 
 class UserOtherInfo extends React.Component {
   render() {
+    const { email, id } = this.props;
     return (
-      <span>Other information</span>
+      <span>Other information: { email } {id} </span>
     );
   }
 }

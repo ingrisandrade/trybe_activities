@@ -20,8 +20,8 @@ class Table extends React.Component {
     
     return (
       <>
-      <UserName  />
-      <UserOtherInfo />
+      <UserName name={joao.name} />
+      <UserOtherInfo email={joao.email} id={joao.id} />
       </>
     );
   }

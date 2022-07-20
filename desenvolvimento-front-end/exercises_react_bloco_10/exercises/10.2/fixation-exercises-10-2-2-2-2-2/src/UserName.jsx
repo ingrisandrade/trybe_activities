@@ -3,8 +3,9 @@ import './UserName.css';
 
 class UserName extends React.Component {
   render() {
+    const name = this.props.name;
     return (
-      <span className="name">any name</span>
+      <span className="name"> { name } </span>
     );
   }
 }
