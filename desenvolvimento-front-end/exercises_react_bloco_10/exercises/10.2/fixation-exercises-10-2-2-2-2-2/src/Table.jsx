@@ -19,7 +19,10 @@ class Table extends React.Component {
     };
     
     return (
-      <span>My table in React by Component</span>
+      <>
+      <UserName  /> n/
+      <UserOtherInfo />
+      </>
     );
   }
 }
