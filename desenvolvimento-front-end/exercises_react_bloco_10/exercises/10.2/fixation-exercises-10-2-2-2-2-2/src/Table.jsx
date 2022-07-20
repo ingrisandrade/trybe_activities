@@ -20,11 +20,12 @@ class Table extends React.Component {
     ];
     
     return (
+      users.map( user => (
       <>
-      <UserName name={joao.name} />
-      <UserOtherInfo email={joao.email} id={joao.id} />
+      <UserName name={user.name} /> 
+      <UserOtherInfo email={user.email} id={user.id} /> <br />
       </>
-    );
+    )));
   }
 }
 
