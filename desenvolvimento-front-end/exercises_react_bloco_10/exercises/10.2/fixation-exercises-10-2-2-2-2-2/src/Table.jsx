@@ -20,7 +20,7 @@ class Table extends React.Component {
     
     return (
       <>
-      <UserName  /> n/
+      <UserName  />
       <UserOtherInfo />
       </>
     );
