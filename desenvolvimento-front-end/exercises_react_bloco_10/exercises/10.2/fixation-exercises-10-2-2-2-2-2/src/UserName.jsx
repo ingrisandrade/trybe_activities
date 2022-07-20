@@ -1,9 +1,10 @@
 import React from "react";
+import './UserName.css';
 
 class UserName extends React.Component {
   render() {
     return (
-      <span>any name</span>
+      <span className="name">any name</span>
     );
   }
 }
