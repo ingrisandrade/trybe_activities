@@ -17,6 +17,13 @@ class Table extends React.Component {
       email: "amelia@gmail.com",
       avatar: "https://cdn.pixabay.com/photo/2017/01/31/13/05/cameo-2023867_640.png"
     },
+
+    {
+      id: 77,
+      name: "Amélia",
+      email: "amelia@gmail.com",
+      avatar: "https://cdn.pixabay.com/photo/2017/01/31/13/05/cameo-2023867_640.png"
+    },
     ];
     
     return (
