@@ -1,10 +1,11 @@
 import './App.css';
+import gamesList from './data';
 import VideoGameList from './components/VideoGameList';
 
 function App() {
   return (
     <div className='App'>
-      <VideoGameList />
+      <VideoGameList games={ gamesList } />
     </div>
   );
 }
