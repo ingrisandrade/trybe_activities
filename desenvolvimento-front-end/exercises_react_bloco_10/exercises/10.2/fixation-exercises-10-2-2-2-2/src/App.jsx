@@ -1,6 +1,8 @@
 import React from "react";
 import Order from "./Order";
 
+//Complete o código do component App de forma que os pedidos referentes aos produtos headphone e energyDrink sejam filhos de App.
+
 class App extends React.Component {
   render() {
     const headphone = {
@@ -26,8 +28,8 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1> Orders recently created </h1>
-      <Order user={headphone.user} product={headphone.product} price={headphone.price.value} price={headphone.price.currency} />
-      <Order user={energyDrink.user} product={energyDrink.product} price={energyDrink.price.value} price={energyDrink.price.currency} />
+      <Order order={headphone} />
+      <Order order={energyDrink} />
       </div>
     )
   }
