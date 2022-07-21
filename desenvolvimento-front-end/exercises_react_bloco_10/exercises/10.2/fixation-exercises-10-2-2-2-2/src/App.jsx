@@ -26,8 +26,8 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1> Orders recently created </h1>
-      <Order order={headphone}/>
-      <Order order={energyDrink} />
+      <Order user={headphone.user} product={headphone.product} price={headphone.price.value} price={headphone.price.currency} />
+      <Order user={energyDrink.user} product={energyDrink.product} price={energyDrink.price.value} price={energyDrink.price.currency} />
       </div>
     )
   }

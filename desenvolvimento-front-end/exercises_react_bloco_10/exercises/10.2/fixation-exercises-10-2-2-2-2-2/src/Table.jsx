@@ -19,9 +19,9 @@ class Table extends React.Component {
     },
 
     {
-      id: 77,
-      name: "Amélia",
-      email: "amelia@gmail.com",
+      id: 42,
+      name: "Lucas",
+      email: "lucas@gmail.com",
       avatar: "https://cdn.pixabay.com/photo/2017/01/31/13/05/cameo-2023867_640.png"
     },
     ];
