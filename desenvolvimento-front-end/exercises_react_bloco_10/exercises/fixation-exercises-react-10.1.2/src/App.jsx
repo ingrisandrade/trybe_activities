@@ -1,10 +1,12 @@
-import Header from './Header';
+import React from "react";
+import Header from "./Header";
 
-function App() {
-  return (
-    <div>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return(
+      <Header />
+    );
+  }
 }
 
 export default App;
