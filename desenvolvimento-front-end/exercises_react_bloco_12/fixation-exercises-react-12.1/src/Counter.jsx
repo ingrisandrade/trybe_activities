@@ -13,13 +13,13 @@ class Counter extends Component {
     console.log('compodenteDidMount');
   }
 
-  shouldComponentUpdate(nextProps, nexSatate){
-    console.log('shouldComponentUpdate');
+  shouldComponentUpdate(nextProps, nextState){
+    console.log('shouldComponentUpdate', this.state, nextState);
     return true;
   }
 
   componentDidUpdate(prevProps, prevState) {
-    console.log("componentDidUpdate");
+    console.log("componentDidUpdate", this.state, prevState);
   }
 
   render() {
