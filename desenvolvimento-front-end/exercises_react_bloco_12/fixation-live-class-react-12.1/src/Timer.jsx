@@ -11,6 +11,8 @@ class Timer extends Component {
 
   state = {
     seconds: 0,
+    phases: ['🫁 Inspire...', '🤐 Segure...', '😮‍💨 Expire...'],
+    currentPhaseIndex: 0,
   }
 
   componentDidMount() {
@@ -24,6 +26,8 @@ class Timer extends Component {
   
   componentDidUpdate() {
     console.log('componentDidUpdate()');
+
+    
   }
 
   componentWillUnmount() {
@@ -33,11 +37,11 @@ class Timer extends Component {
   render() {
     console.log('render()');
 
-    const { seconds } = this.setState
+    const { seconds, phases, currentPhaseIndex } = this.setState
 
     return (
       <section>
-        <h1>Fase da respiração</h1>
+        <h1>{ phases[currentPhaseIndex] }</h1>
         <h2>{ seconds }</h2>
       </section>
     );
