@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+const oneSecond = 1000;
+
 class Timer extends Component {
 
   constructor() {
@@ -7,8 +9,17 @@ class Timer extends Component {
     console.log('constructor()');
   }
 
+  state = {
+    seconds: 0,
+  }
+
   componentDidMount() {
     console.log('componentDidMount()');
+
+    setInterval(() => {
+      this.setState((prevState) => ({ seconds: prevState + 1 }));
+      // Dessa forma não precisa usar o return.
+    }, oneSecond);
   }
   
   componentDidUpdate() {
@@ -21,9 +32,13 @@ class Timer extends Component {
 
   render() {
     console.log('render()');
+
+    const { seconds } = this.setState
+
     return (
       <section>
-        Componente Timer
+        <h1>Fase da respiração</h1>
+        <h2>{ seconds }</h2>
       </section>
     );
   }
