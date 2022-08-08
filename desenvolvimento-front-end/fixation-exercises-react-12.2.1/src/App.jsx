@@ -1,12 +1,18 @@
 import React, { Component } from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 import Home from './Home';
+import About from './About';
+import HowTo from './HowTo';
+import Profile from './Profile';
 
 class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <Home />
+        <Route path="/about" component={About} />
+        <Route path="/howto" component={HowTo} />
+        <Route path="/profile"><Profile /></Route>
+        <Route exact path="/" component={Home} />
       </BrowserRouter>
     );
   }
