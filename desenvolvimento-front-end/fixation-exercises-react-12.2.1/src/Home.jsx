@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class Home extends Component {
   render() {
     return (
       <div>
-        <span>My Home</span>
+        <Link to="/about">About</Link>
+        <h1>My Home</h1>
       </div>
     );
   }
