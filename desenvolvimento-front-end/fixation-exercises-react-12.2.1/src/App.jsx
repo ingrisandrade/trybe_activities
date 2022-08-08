@@ -1,9 +1,13 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import Home from './Home';
 
 class App extends Component {
   render() {
     return (
-      <div>App</div>
+      <BrowserRouter>
+        <Home />
+      </BrowserRouter>
     );
   }
 }
