@@ -99,59 +99,59 @@ The program has over 1,500 hours of classroom and online classes, covers introdu
   
 ##### Block 10: Introduction to React
 
-- [ ] 10-1: _Introduction - Front-end_
-- [ ] 10-1: _Introduction - React_
-- [ ] 10-1: _'Hello, world' in React!_
-- [ ] 10-2: _React components_
-- [ ] 10-3: _[Project - Solar System]()_
+- [x] 10-1: _Introduction - Front-end_
+- [x] 10-1: _Introduction - React_
+- [x] 10-1: _'Hello, world' in React!_
+- [x] 10-2: _React components_
+- [x] 10-3: _[Project - Solar System]()_
 
 ##### Block 11: Components with State, Events and Forms with React
 
-- [ ] 11-1: _Components with state and events_
-- [ ] 11-2: _Forms in React_
-- [ ] 11-3: _[Project - Tryunfo]()_
+- [x] 11-1: _Components with state and events_
+- [x] 11-2: _Forms in React_
+- [x] 11-3: _[Project - Tryunfo]()_
 
 ##### Block 12: Component Lifecycle and React Router
 
-- [ ] 12-1: _Component Lifecycle_
-- [ ] 12-2: _React Router_
-- [ ] 12-3: _[Project - TrybeTunes]()_
+- [x] 12-1: _Component Lifecycle_
+- [x] 12-2: _React Router_
+- [x] 12-3: _[Project - TrybeTunes]()_
 
 ##### Block 13: Agile Methodologies
 
-- [ ] 13-1: _Agile methodologies_
-- [ ] 13-2: _[Project - Frontend Online Store]()_
+- [x] 13-1: _Agile methodologies_
+- [x] 13-2: _[Project - Frontend Online Store]()_
 
 ##### Block 14: Automated testing with React Testing Library
 
-- [ ] 14-1: _RTL - Getting Started_
-- [ ] 14-2: _RTL - Mocks and Inputs_
-- [ ] 14-3: _RTL - Terstando React Router_
-- [ ] 14-4: _[Project - Testing in React]()_
+- [x] 14-1: _RTL - Getting Started_
+- [x] 14-2: _RTL - Mocks and Inputs_
+- [x] 14-3: _RTL - Terstando React Router_
+- [x] 14-4: _[Project - Testing in React]()_
 
 ##### Block 15: State management with Redux
 
-- [ ] 15-1: _Introduction to Redux - The global state of the application_
-- [ ] 15-2: _Using Redux in React_
-- [ ] 15-3: _Using Redux in React - Practice_
-- [ ] 15-4: _Using Redux in React - Asynchronous Actions_
-- [ ] 15-5: _Testing in React-Redux_
-- [ ] 15-6: _[Project - Trybe Wallet]()_
+- [x] 15-1: _Introduction to Redux - The global state of the application_
+- [x] 15-2: _Using Redux in React_
+- [x] 15-3: _Using Redux in React - Practice_
+- [x] 15-4: _Using Redux in React - Asynchronous Actions_
+- [x] 15-5: _Testing in React-Redux_
+- [x] 15-6: _[Project - Trybe Wallet]()_
 
 ##### Block 16: Project Trivia Game
 
-- [ ] 16-1: _[Project - Trivia Game]()_
+- [x] 16-1: _[Project - Trivia Game]()_
 
 ##### Block 17: Context API and React Hooks
 
-- [ ] 17-1: _React's Context API_
-- [ ] 17-2: _React Hooks - useState and useContext_
-- [ ] 17-3: _React Hooks - useEffect and custom Hooks_
-- [ ] 17-4: _[Project - StarWars Datatable with Context API and Hooks]()_
+- [x] 17-1: _React's Context API_
+- [x] 17-2: _React Hooks - useState and useContext_
+- [x] 17-3: _React Hooks - useEffect and custom Hooks_
+- [x] 17-4: _[Project - StarWars Datatable with Context API and Hooks]()_
 
 ##### Block 18: Project Recipe App
 
-- [ ] 18-1: _[Project - Recipes App]()_
+- [x] 18-1: _[Project - Recipes App]()_
 
 </details>
 
