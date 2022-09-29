@@ -91,7 +91,7 @@ The program has over 1,500 hours of classroom and online classes, covers introdu
 
 </details>
   
-## Front-end development :hourglass_flowing_sand:
+## Front-end development :heavy_check_mark:
 
 <details>
 
