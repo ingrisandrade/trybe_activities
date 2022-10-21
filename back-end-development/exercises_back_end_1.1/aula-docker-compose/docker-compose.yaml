@@ -19,3 +19,11 @@ services:
   database:
     image: betrybe/docker-compose-example-database:v1 # Especificamos a Imagem Docker diretamente.
     restart: on-failure
+
+# Este arquivo Compose foi configurado da seguinte maneira:
+
+# Três serviços, um deles usando uma imagem Docker pronta e dois com arquivo Dockerfile;
+# Mapeamos as portas de conexão;
+# Configuramos a política de reinicialização;
+# Criamos uma variável de ambiente;
+# Definimos a ordem de subida dos serviços.
