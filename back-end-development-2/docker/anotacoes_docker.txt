@@ -11,4 +11,13 @@
   docker container run alpine:3.14 echo "Hello World"
   Os parâmetros <flags>? e <argumentos>? são opcionais (o que é sinalizado pelo uso de ?).
 
+--name <nome-da-sua-escolha> | Flag utilizada para dar um nome específico ao container criado.
+  Exemplo: 
+  docker container run --name meu-container alpine:3.14 echo "Hello World 2"
+
+- docker rm <nome-do-container> | Para remover um container específicos.
+  Obs.: Um container só pode ser removido com o comando | docker rm <nome-do-container> | se ele estiver parado ou tiver sua execução terminada. Ex.:
+  docker rm meu-container
+
+
 
