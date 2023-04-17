@@ -19,5 +19,17 @@
   Obs.: Um container só pode ser removido com o comando | docker rm <nome-do-container> | se ele estiver parado ou tiver sua execução terminada. Ex.:
   docker rm meu-container
 
+- --rm | A flag indica para o Docker que desejamos que um container seja removido ao final da sua execução. Ex.:
+  docker container run --rm alpine:3.14 echo "Hello World 3"
+
+  Obs.: A flag | --rm | vai remover apenas o container! A imagem criada ainda estará presente na máquina.
+
+- -d ou --detach | Qualquer uma dessas duas flags faz com que a execução do container ocorra em segundo plano, ou seja, embora não esteja visível, o container executará de forma assíncrona.
+  No exemplo trocamos o argumento echo pela execução do programa sleep, que fará com que o container continue sua execução por 300 segundos (5 minutos):
+  docker container run --rm -d alpine:3.14 sleep 300
+
+- docker stop -t 0 <nome-do-container>  | Este comando força o container a terminar sua execução atual. No caso do sleep é preciso usar a flag | -t 0 | para forçar o comando.
+
+
 
 
