@@ -1,0 +1,3 @@
+- docker <comando> <subcomando> <parâmetros> é o formato padrão para comandos não-abreviados no CLI;
+
+- docker images para visualizar todas as imagens Docker que já estão presentes em sua máquina.
