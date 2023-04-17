@@ -1,3 +1,14 @@
-- docker <comando> <subcomando> <parâmetros>: é o formato padrão para comandos não-abreviados no CLI;
+- docker <comando> <subcomando> <parâmetros> | É o formato padrão para comandos não-abreviados no CLI.
 
-- docker images: para visualizar todas as imagens Docker que já estão presentes na máquina.
+- docker images | Para visualizar todas as imagens Docker que já estão presentes na máquina.
+
+- docker container ls | Para listar todos os containers em execução neste momento na máquina.
+
+- docker container ls -a | Para visualizar todos os containers atuais, incluindo os que estão em execução e também parados.
+
+- docker container run <flags>? <imagem>:<tag> <argumentos>? | Para executar um container utilizando a imagem identificada pelo <imagem>:<tag>.
+  Exemplo utilizando a imagem Docker alpine e a tag 3.14:
+  docker container run alpine:3.14 echo "Hello World"
+  Os parâmetros <flags>? e <argumentos>? são opcionais (o que é sinalizado pelo uso de ?).
+
+
