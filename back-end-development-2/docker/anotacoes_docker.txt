@@ -30,6 +30,22 @@
 
 - docker stop -t 0 <nome-do-container>  | Este comando força o container a terminar sua execução atual. No caso do sleep é preciso usar a flag | -t 0 | para forçar o comando.
 
+- docker exec -it <nome-do-container> <comando-a-ser-executado> | Acessando o terminal do container. Ex.:
+  docker exec -it meu-container sh
+  ps aux
+  .
+  .
+  .
+  .
+  exit
+
+Obs.: -t | Solicita a criação de uma sessão de terminal;
+      -i | Necessária para que a sessão seja interativa;
+      sh | Comando executado, por ser um programa de terminal linux.
+
+      ps aux | Comando executado já dentro do programa;
+      exit | Comando usado para sair do terminal.
+
 
 
 
