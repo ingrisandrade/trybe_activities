@@ -46,6 +46,16 @@ Obs.: -t | Solicita a criação de uma sessão de terminal;
       ps aux | Comando executado já dentro do programa;
       exit | Comando usado para sair do terminal.
 
+- docker logs <flags> <nome-do-container> | Comando para que seja possível a visualização das informações do container sem precisar se conectar diretamente ao terminal do container.
+  docker logs meu-container
 
+- docker top | Traz as informações sobre os processos que estão sendo rodados dentro do container. É útil para quando estamos os rodando em segundo plano.
+  docker top meu-container
 
+- docker container prune | Remove todos os containers inativos do computador.
 
+- docker container -l | Pega o último container que foi criado.
+
+- docker container start <id-do-container> | Inicia um container que já está parado na lista.
+
+docker container rm -f <id-do-container> | Força a remoção de um container específico.
