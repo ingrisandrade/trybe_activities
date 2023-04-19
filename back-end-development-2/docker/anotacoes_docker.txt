@@ -46,8 +46,22 @@ Obs.: -t | Solicita a criação de uma sessão de terminal;
       ps aux | Comando executado já dentro do programa;
       exit | Comando usado para sair do terminal.
 
+- ctrl p ctrl q | Atalho para sair do terminal sem derrubar o processo.
+
+- docker container run -dit --name ubuntu04 ubuntu bash | Executa sem abrir o terminal.
+
+- docker container ls --filter name=ubuntu | Pega só os containers que tem o nome ubuntu(neste exemplo).
+
 - docker logs <flags> <nome-do-container> | Comando para que seja possível a visualização das informações do container sem precisar se conectar diretamente ao terminal do container.
-  docker logs meu-container
+
+- docker system prune -f | Olhar na aula ao vivo do course.
+
+- docker container rm -f $(docker ls -qa) | Apaga todos os containers.
+  O | -qa | pega todos os ids.
+
+- docker container create -it --name container node:18-alpine | O | create | cria o container sem inicializá-lo. Vai deixar o container pronto para que ele seja executado.
+
+- docker attach <id-do-container> | É uma forma de ganhar acesso ao terminal do container.
 
 - docker top | Traz as informações sobre os processos que estão sendo rodados dentro do container. É útil para quando estamos os rodando em segundo plano.
   docker top meu-container
