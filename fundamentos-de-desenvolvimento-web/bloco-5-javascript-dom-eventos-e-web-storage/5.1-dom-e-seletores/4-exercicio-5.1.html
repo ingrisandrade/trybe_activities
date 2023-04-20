@@ -41,19 +41,61 @@
         <p>Trybe</p>
       </section>
     </main>
-    <script src="4-exercicio-5.1.js">
-  /*
-    Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
-    - document.getElementById()
-    - document.getElementsByClassName()
-    - document.getElementsByTagName()
-  1.Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)
-  2.Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
-  3.Crie uma função que mude a cor do quadrado vermelho para branco.
-  4.Crie uma função que corrija o texto da tag <h1>.
-  5.Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
-  6.Crie uma função que exiba o conteúdo de todas as tags <p> no console.
-  */
+    <script>
+  
+    // Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
+    // - document.getElementById()
+    // - document.getElementsByClassName()
+    // - document.getElementsByTagName()
+
+  // 1.Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)
+
+    function modifyText () {
+      const textParagraph = document.querySelectorAll('p')[1];
+      textParagraph.innerText = 'Me vejo daqui a dois anos nos EUA obtendo novas experiências e conquistando espaços de reconhecimento referente à minha contribuição para todas as pessoas que queiram entrar no mundo da tecnologia.';
+    }
+    modifyText();
+
+  // 2.Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
+    function changeColor () {
+      const colorTrybe = document.querySelector('.main-content');
+      colorTrybe.style.background = 'rgb(76,164,109)';
+    }
+    changeColor();
+
+  // 3.Crie uma função que mude a cor do quadrado vermelho para branco.
+
+    function changeColorWhite () {
+      const colorWhite = document.querySelector('.center-content');
+      colorWhite.style.background = 'white';
+    }
+    changeColorWhite();
+
+  // 4.Crie uma função que corrija o texto da tag <h1>.
+    function correctText() {
+      const newText = document.querySelector('.title');
+      newText.innerHTML = 'Exercício 5.1 - JavaScript';
+    }
+    correctText();
+
+  // 5.Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+    function capitalLetters() {
+      const modifyLetters = document.querySelectorAll('p')[0];
+      modifyLetters.innerText = modifyLetters.innerText.toUpperCase();
+    }
+    capitalLetters();
+
+  // 6.Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+
+    function displayContent() {
+      const displayParagraph = document.querySelectorAll('p');
+      for (let index = 0; index < displayParagraph.length; index += 1) {
+      console.log(displayParagraph[index].innerText);
+      }
+    }
+    displayContent();
+
+    
     </script>
   </body>
 </html>
