@@ -13,3 +13,7 @@
 
 - docker rmi <id-da-img> | Para remover uma imagem Docker do computador.
     - rmi é um acrônimo das palavras ReMover Imagem
+
+- docker system prune -af | Remove todos os containers e imagens Docker que estejam no computador.
+
+
