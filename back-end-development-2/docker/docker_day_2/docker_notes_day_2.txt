@@ -16,4 +16,17 @@
 
 - docker system prune -af | Remove todos os containers e imagens Docker que estejam no computador.
 
+- Algumas anotações sobre dockerfile:
+
+    - FROM | significa que vamos começar a construção desta imagem a partir da imagem Docker já existente!
+
+    - CMD | mostra qual comando deve ser utilizado ao iniciar a imagem como um container;
+        -O comando CDM aceita uma lista de parâmetros ou apenas comandos, sem declarar como uma lista.
+
+- docker build <flags> -t <nome-da-imagem> <contexto> | Para construir uma imagem docker.
+    - -t | indicará qual será o nome da imagem, e também a tag, se utilizar o formato <nome>:<tag>
+
+    - Um contexto, ou seja, em qual caminho de pasta o Docker deve se basear para processar o arquivo Dockerfile.
+        - Normalmente utilizamos apenas . (ponto final), que indica a pasta atual.
+
 
