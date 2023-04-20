@@ -19,7 +19,7 @@
       }
 
       .main-content .center-content {
-        background-color: red;
+        background-color: rgb(109, 192, 106);
         width: 50%;
         margin-left: auto;
         margin-right: auto;
@@ -47,7 +47,7 @@
         background-color: blue;
         width: 60%;
         margin-left: auto;
-        margin-right: 0;
+        margin-right: auto;
       }
 
       .main-content .description {
@@ -57,111 +57,112 @@
   </head>
   <body>
     <script>
+      // 1 - Adiciona tag h1 como filho da tag body.
       const elementH1= document.querySelector('body');
 
-      // 1 - Função que adiciona tag h1 como filho da tag body.
-      function createTextElement (tagH1) {
-        let newH1 = document.createElement('h1');
-        newH1.textContent = 'Exercício 5.2 - JavaScript DOM';
-        return newH1;
-      }
+      let newH1 = document.createElement('h1');
+      newH1.innerText = 'Exercício 5.2 - JavaScript DOM';
+      elementH1.appendChild(newH1);
 
-      function addElement(parent, child) {
-        parent.appendChild (child);
-      }
-      addElement(elementH1, createTextElement('Exercício 5.2 - JavaScript DOM'))
-
-      // 2. Função que adiciona a tag main com a classe main-content como filho da tag body.
-      function createMainElement (main) {
-        let newMain = document.createElement('main');
-        newMain.className = 'main-content';
-        return newMain;
-      }
+      // 2. FAdiciona a tag main com a classe main-content como filho da tag body.
       
-      function addElement(parent, child) {
-        parent.appendChild(child);
-      }
-      addElement(elementH1, createMainElement('main-content'));
+      let newMain = document.createElement('main');
+      newMain.className = 'main-content';
+      elementH1.appendChild(newMain);
 
-      // 3. 5. 6. Função que adiciona 3 tags section com as classes center-content, left-content e right-content, respectivamente, como filhos da tag main.
+      // 3. Adiciona a tag section com a classe center-content como filha da tag main.
 
       const main = document.querySelector('.main-content');
 
-      function createSectionElement(classes) {
-        let newSection = document.createElement('section');
-        newSection.className = classes;
-        return newSection;
-      }
+      let newSectionOne = document.createElement('section');
+      newSectionOne.className = 'center-content';
+      main.appendChild(newSectionOne)
 
-      let classes = ['center-content', 'left-content', 'right-content'];
-      for (let classe of classes) {
-        let element = createSectionElement(classe);
-        addElement(main, element);
-      }
-
-      // 4. Função que adiciona tag p (com algum texto) como filho da section criada no passo 3
+      // // 4. Adiciona tag p (com algum texto) como filho da section criada no passo 3
       
-      const section1 = document.querySelector('.center-content');
+      const sectionOne = document.querySelector('.center-content');
 
-      function createParagraph(text) {
       let newParagraph = document.createElement('p');
-      newParagraph.textContent = 'Texto de parágrafo teste';
-      return newParagraph;
-      }
+      newParagraph.textContent = 'Este é um paragráfo';
+      sectionOne.appendChild(newParagraph);
 
-      function addElementP(parent, child) {
-        parent.appendChild(child);
-      }
-      addElement(section1, createParagraph('Texto de parágrafo teste'));
+      // 5. Adiciona a tag section com a classe left-content como filho da tag main criada no passo 2;
 
-      // 7. Função que adiciona uma imagem com src configurado com valor https://picsum.photos/200 e classe small-image. Esse elemento deve ser filho do section criado no passo 5 (left-content).
+      let sectionTwo = document.createElement('section');
+      sectionTwo.className = 'left-content';
+      main.appendChild(sectionTwo);
 
-      const sectionTwo = document.querySelector('.left-content');
+      // 6. Adiciona a tag section com a classe right-content como filho da tag main criada no passo 2;
 
-      function createImage(image) {
-        let newImg = document.createElement('img');
-        newImg.src = 'https://picsum.photos/200';
-        newImg.className = 'small-image';
-        return newImg;
-      }
+      let sectionThree = document.createElement('section');
+      sectionThree.className = 'right-content';
+      main.appendChild(sectionThree);
 
-      function addElement(parent, child) {
-        parent.appendChild(child);
-      }
-      addElement(sectionTwo, createImage('small-image'));
+      // // 7. Adiciona uma imagem com src configurado com valor https://picsum.photos/200 e classe small-image. Esse elemento deve ser filho do section criado no passo 5 (left-content).
 
-      // 8. Função que adiciona uma lista não ordenada com os valores de 1 a 10 por extenso, como valores da lista. Essa lista deve ser filha de section criada no passo 6(right-content).
+      const sectionTwoClass = document.querySelector('.left-content');
+      
+      let newImg = document.createElement('img');
+      newImg.src = 'https://picsum.photos/200';
+      newImg.className = 'small-image';
+      sectionTwoClass.appendChild(newImg);
 
-      const sectionThree = document.querySelector('.right-content');
+      // // 8. Adiciona uma lista não ordenada com os valores de 1 a 10 por extenso, como valores da lista. Essa lista deve ser filha de section criada no passo 6(right-content).
 
-      function createList(list) {
-        let newList = document.createElement('li');
-        newList.innerText = list;
-        return newList;
-      }
+      const sectionThreeList = document.querySelector('.right-content');
 
       let list = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
-      for (let item of list) {
-        let element = createList(item);
-        addElement(sectionThree, element);
+      for (let index = 0; index < list.length; index += 1) {
+        let itemList = list[index];
+
+        let newList = document.createElement('li');
+        newList.innerText = itemList;
+        sectionThreeList.appendChild(newList);
       }
 
-      // 9. Função que adiciona 3 tags h3, todas sendo filhas do main criado com passo 2.
-      
-      
+      // // 9. Adiciona 3 tags h3, todas sendo filhas do main criado com passo 2.
 
-      function createTitulo(classes) {
-        let newTitulo = document.createElement('h3');
-        newTitulo.className = classes;
-        return newTitulo;
+      for (let index = 1; index <= 3; index += 1) {
+      let newTitulo = document.createElement('h3');
+        newTitulo.innerText = `Titulo ${index}`;
+        main.appendChild(newTitulo);
       }
 
-      let classe = ['title-one', 'title-two', 'title-three'];
-      for (let item of classe) {
-        let element = createTitulo(item);
-        addElement(main, element);
+      // // Alterações e remoções.
+
+      // 1. Adiciona a classe title na tag h1 craida.
+      const classH1 = document.querySelector('h1');
+      classH1.className = 'title';
+
+      // 2. Adiciona a classe description nas 3 tags h3 criadas.
+      const classH3 = document.querySelectorAll('h3');
+
+      for (let index = 0; index < classH3.length; index += 1) {
+      classH3[index].className = 'description';
       }
 
+      // 3. Remove a section criada no passo 5(left-content).
+
+      const removeSectionTwo = document.querySelector('.left-content');
+      removeSectionTwo.remove();
+
+      // 4. Centraliza a section criado no passo 6 (right-content). Dica: para centralizar, basta configurar o margin-right: auto da section ; CSS
+
+      // 5. Troque a cor de fundo do elemento pai da section criada no passo 3 (aquela que possui a classe center-content ) para a cor verde; CSS
+
+      // 6. Remova os dois últimos elementos ( nove e dez ) da lista criada no passo 8.
+
+      const rmItemList = document.querySelectorAll('li');
+
+      for (let index = 0; index < rmItemList.length; index += 1) {
+        let element = rmItemList[index]
+
+        if (element.innerText.includes('Nove')) {
+          sectionThreeList.removeChild(element);
+        } if (element.innerText.includes('Dez')) {
+          sectionThreeList.removeChild(element);
+        }
+      }
 
     </script>
   </body>
