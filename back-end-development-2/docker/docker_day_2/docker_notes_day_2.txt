@@ -1,0 +1,7 @@
+- Uma imagem Docker é um arquivo imutável e a partir dele um ou mais containers podem ser gerados. 
+
+- Uma imagem pode ser criada a partir do comando docker build, seguindo as instruções contidas em um arquivo chamado Dockerfile.
+  O Dockerfile é um arquivo que contém as instruções necessárias (como uma receita) para construirmos a imagem Docker exatamente como desejamos. Esse arquivo nos mostra as bibliotecas que devem ser instaladas, arquivos que devem ser inicializados etc.
+
+
+
