@@ -29,4 +29,5 @@
     - Um contexto, ou seja, em qual caminho de pasta o Docker deve se basear para processar o arquivo Dockerfile.
         - Normalmente utilizamos apenas . (ponto final), que indica a pasta atual.
 
+- 
 
