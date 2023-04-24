@@ -1,5 +1,12 @@
 - ANOTAÇÕES SOBRE DOCKER COMPOSE!
 
+- Todo arquivo docker-compose.yaml deve iniciar com a chave version.
+    - Exemplo: version: '3'
+
+- Todo container é criado a partir de uma imagem. Sendo assim, precisamos especificá-las aos nossos serviços.
+    - image: | especifica uma imagem Docker pronta, seja local ou a ser baixada no Docker Hub;
+    - build: | especifica a pasta contendo um arquivo Dockerfile a partir do qual o Compose vai executar o comando docker build automaticamente.
+    
 
 
 
