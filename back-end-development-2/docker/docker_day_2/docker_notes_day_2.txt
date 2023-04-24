@@ -51,4 +51,9 @@
     - -p | Com essa flag foi solicitado ao Docker que abra uma exceção neste isolamento, fazendo um mapeamento da porta 1234 do nosso computador para a porta 80, dentro da rede do container.
     - Logo, ao fazer uma conexão na porta 1234 do nosso computador, estamos na verdade fazendo uma conexão na porta 80 dentro do container.
 
+- CRIANDO OS ARQUIVOS PARA O NOVO SERVIDOR WEB COM HUGO E NGINX!
+
+- O objetivo da ferramenta Hugo é facilitar a criação de páginas, de modo que as pessoas possam focar mais em escrever o conteúdo do que se preocupar com tags HTML das páginas.
+
+
 
