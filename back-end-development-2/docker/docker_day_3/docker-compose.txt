@@ -6,8 +6,11 @@
 - Todo container é criado a partir de uma imagem. Sendo assim, precisamos especificá-las aos nossos serviços.
     - image: | especifica uma imagem Docker pronta, seja local ou a ser baixada no Docker Hub;
     - build: | especifica a pasta contendo um arquivo Dockerfile a partir do qual o Compose vai executar o comando docker build automaticamente.
-    
 
+- MAPEAMENTO DE PORTAS!
+
+- Dentro de cada serviço, podemos especificar o ports, que é uma lista de mapeamentos de portas entre o computador local e as portas do container.
+- O primeiro parâmetro é sempre a porta do computador local e o segundo parâmetro é a porta exposta no container.
 
 
 
