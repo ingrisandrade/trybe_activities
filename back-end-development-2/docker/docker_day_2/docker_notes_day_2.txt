@@ -66,4 +66,6 @@
 - ENTRYPOINT | indica para o Docker qual comando deve ser executado ao iniciar o container.
     - Exemplo: ENTRYPOINT ["nginx", "-g", "daemon off;"]
 
+- IMAGEM DOCKER APENAS COM O NGINX E AS PÁGINAS GERADAS PELO HUGO!
 
+- É possível criar imagens intermediárias com apenas um arquivo Dockerfile!
