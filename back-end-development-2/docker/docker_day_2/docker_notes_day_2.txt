@@ -71,6 +71,10 @@
 - É possível criar imagens intermediárias com apenas um arquivo Dockerfile!
 
 - RUN vs. ENTRYPOINT vs. CMD
+    - RUN é a execução imediata durante o build;
+    - ENTRYPOINT é a execução obrigatória ao iniciar o container;
+    - CMD é uma sugestão de parâmetros ao iniciar o container.
+
 
 - RUN <comando> <argumento1> <argumento2> <argumentoN> | Indica que o comando dado deve ser executado durante a construção da imagem Docker.
     - É muito comum utilizar o RUN para fazer instalações de dependências.
