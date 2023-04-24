@@ -39,3 +39,9 @@
     - Fazer o download do conteúdo de uma URL \<src> na pasta de destino \<dest>
     - Descompactar automaticamente arquivos compactados de formatos reconhecidos (.tar, .gzip, .bzip2, etc)
 
+- EXPOSE 80 | Indica que a imagem poderá receber conexões pelo número da porta que for informado;
+
+- CMD ["httpd-foreground"] | Especifica que o programa httpd-foreground seja executado ao iniciar essa imagem como um container.
+    - Este programa já veio junto com a imagem base, portanto não precisamos nos preocupar.
+
+
