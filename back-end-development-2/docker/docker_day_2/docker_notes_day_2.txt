@@ -22,10 +22,11 @@
 
     - CMD | mostra qual comando deve ser utilizado ao iniciar a imagem como um container;
         -O comando CDM aceita uma lista de parâmetros ou apenas comandos, sem declarar como uma lista.
+        Exemplos:   CMD ["echo", "Eu sou uma pessoa estudante da Trybe!"]
+                    CMD echo "olá mundo"
 
 - docker build <flags> -t <nome-da-imagem> <contexto> | Para construir uma imagem docker.
     - -t | indicará qual será o nome da imagem, e também a tag, se utilizar o formato <nome>:<tag>
-
     - Um contexto, ou seja, em qual caminho de pasta o Docker deve se basear para processar o arquivo Dockerfile.
         - Normalmente utilizamos apenas . (ponto final), que indica a pasta atual.
 
