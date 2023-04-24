@@ -52,8 +52,18 @@
     - Logo, ao fazer uma conexão na porta 1234 do nosso computador, estamos na verdade fazendo uma conexão na porta 80 dentro do container.
 
 - CRIANDO OS ARQUIVOS PARA O NOVO SERVIDOR WEB COM HUGO E NGINX!
+    - Pasta => servidor-web-com-hugo-e-nginx
 
 - O objetivo da ferramenta Hugo é facilitar a criação de páginas, de modo que as pessoas possam focar mais em escrever o conteúdo do que se preocupar com tags HTML das páginas.
 
+- AS | Prefixo utilizado para nomear o estágio atual.
+- WORKDIR /site | Indica para o Docker qual é a pasta atual de trabalho dentro da imagem.
+- COPY com três linhas => copia os três arquivos no formato de pastas que o Hugo espera que estes arquivos estejam.
+- RUN com três linhas
+    => Linha 1 => instala o ferramenta Hugo na nossa imagem Docker
+    => Linha 2 => executa o comando hugo –minify –gc para gerar as páginas finais em HTML, baseados nos arquivos de templates (index.html) e conteúdos (_index.md).
+    => Linha 3 => executa o comando mv para mover as páginas resultantes do Hugo para o caminho onde o nginx espera que tenha páginas HTML para serem servidas.
+- ENTRYPOINT | indica para o Docker qual comando deve ser executado ao iniciar o container.
+    - Exemplo: ENTRYPOINT ["nginx", "-g", "daemon off;"]
 
 
