@@ -30,5 +30,12 @@
     - Um contexto, ou seja, em qual caminho de pasta o Docker deve se basear para processar o arquivo Dockerfile.
         - Normalmente utilizamos apenas . (ponto final), que indica a pasta atual.
 
-- 
+- COPY | Copia um arquivo no computador local e coloca-o dentro da imagem, no caminho especificado à frente. 
+    Exemplo de acordo com o exercício proposto:
+      - A linha vai copiar o arquivo index.html, que está na pasta atual da execução do comando docker build, e vai copiá-lo para o caminho /usr/local/apache2/htdocs/, dentro da imagem!
+
+- ADD index.html /usr/local/apache2/htdocs | Alternativa para o comando COPY.
+  - o comando ADD tem duas funcionalidades interessantes, tais como:
+    - Fazer o download do conteúdo de uma URL \<src> na pasta de destino \<dest>
+    - Descompactar automaticamente arquivos compactados de formatos reconhecidos (.tar, .gzip, .bzip2, etc)
 
