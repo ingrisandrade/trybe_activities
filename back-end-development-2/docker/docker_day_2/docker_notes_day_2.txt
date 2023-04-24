@@ -48,3 +48,7 @@
     - Ao usar o comando docker run, uma nova flag foi utilizada: -p 1234:80
     - O navegador não foi usada a porta 80 como exposto no Dockerfile, e sim a porta 1234
     - Um container Docker é um processo totalmente isolado do computador principal, então mesmo declarando EXPOSE no arquivo Dockerfile, ainda não é o suficiente para expor a porta do container para o nosso computador.
+    - -p | Com essa flag foi solicitado ao Docker que abra uma exceção neste isolamento, fazendo um mapeamento da porta 1234 do nosso computador para a porta 80, dentro da rede do container.
+    - Logo, ao fazer uma conexão na porta 1234 do nosso computador, estamos na verdade fazendo uma conexão na porta 80 dentro do container.
+
+
