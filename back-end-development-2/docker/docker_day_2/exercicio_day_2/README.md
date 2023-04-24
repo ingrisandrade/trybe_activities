@@ -8,11 +8,14 @@
 ---
 
 ## 2.Defina um `ENTRYPOINT` para a execução do comando.
+
 <details>
   <summary><strong> Saiba mais: </strong></summary>
+
   * Observe que o executável `cowsay` está no diretório `/usr/games/`
   * Lembre-se que com ele, diferente do `CMD`, o comando não poderá ser sobrescrito com o `docker run`, porém conseguiremos passar parâmetros ao binário e exploraremos esse recurso para poder passar a mensagem.
 </details>
+
 ---
 
 ## 3.Utilize o `CMD` para definir uma mensagem padrão.
