@@ -62,6 +62,12 @@
 
 - RECONSTRUINDO A IMAGEM DOCKER
 
+- --build | Flag utilizada para deixar nítido que as imagens precisa ser construídas novamente utilizando o compose.
+- docker-compose up | Comando usado junto com a flag anterior.
+    - Exemplo: docker-compose up -d --build
+
+
+
 
 
 
