@@ -68,6 +68,26 @@
 
 - DESCENDO TODOS OS SERVIÇOS!
 
+- O ato de parar a excução de todos os seriços do compose é chamado de descer.
+
+- docker-compose down | Comando utilizado para descer os serviços. Com esse comando, todos os containers serão parados e removidos.
+
+- SUBINDO SERVIÇOS ESPECÍFICOS!
+
+- docker-compose up <serviço> | Para subir apenas parte dos serviços ou um serviço específico.
+
+- VISUALIZANDO OS LOGS DOS SERVIÇOS!
+
+- docker-compose logs <nome-do-serviço> | Para ver os logs de serviços  de maneira semelhante como fazemos unitariamente com os containers.
+    - Aqui, é possível especificar um serviço para visualizar seus logs ou ver todos os logs de todo o ambiente, conforme o arquivo do Compose.
+
+- docker-compose logs <serviço> | Visualizando os logs do serviço.
+
+- docker-compose logs --tail 5 database | A flag | --tail | é usada para limitar a quantidade de linhas de logs retornadas pelo comando, seguido do número de linhas.
+
+- -f ou --follow | Usadas para acompanhar em tempo real as saídas dos containers. Para sair, use | Ctrl+C | ou | Command+C |
+
+- ARQUIVOS COMPOSE MAIS ROBUSTOS!
 
 
 
