@@ -60,6 +60,8 @@
 
 - http://localhost:3000 | Para acessar o frontend e verificar se deu tudo certo. 
 
+- RECONSTRUINDO A IMAGEM DOCKER
+
 
 
 
