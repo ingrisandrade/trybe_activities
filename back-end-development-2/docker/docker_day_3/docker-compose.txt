@@ -12,5 +12,56 @@
 - Dentro de cada serviço, podemos especificar o ports, que é uma lista de mapeamentos de portas entre o computador local e as portas do container.
 - O primeiro parâmetro é sempre a porta do computador local e o segundo parâmetro é a porta exposta no container.
 
+- E SE O CONTAINER APRESENTAR UM PROBLEMA?
+
+- O Compose nos permite configurar uma política de reinicialização!
+    - restart | Chave para configurar este comportamente:
+      - O Compose possui quatro políticas de reinicialização, sendo elas:
+        - no | define que o container não reiniciará automaticamente (Padrão);
+        - on-failure | define que o container será reiniciado caso ocorra alguma falha apontada pelo exit code, diferente de zero;
+        - always | especifica que sempre que o serviço parar, seja por um falha ou porque ele simplesmente finalizou sua execução, ele deverá ser reiniciado;
+        - unless-stopped | define que o container sempre será reiniciado, a menos que utilizemos o comando docker stop <container> manualmente.
+
+- USANDO VARIAVÉIS DE AMBIENTE:
+
+- Uma variável de ambiente é um recurso disponível nos sistemas operacionais que permite criar uma variável no formato NOME_DA_VARIÁVEL=VALOR. Onde NOME_DA_VARIÁVEL é o nome da variável de ambiente, e VALOR se refere a um valor que será vinculado à variável.
+    - Exemplo => Ao digitar o seguinte comando: echo $USER
+    - Será apresentado o valor da variável de ambiente $USER, cujo valor é o nome de usuário da pessoa que está utilizando o sistema no momento da execução.
+
+- environment | Chave utilizada para criar e usar variavéis de ambiente dentro dos containers.
+
+- DB_HOST | Nome do serviço onde o banco de dados vai rodar.
+
+- A ideia de variáveis de ambiente é trazer mais dinamismo entre ambientes.
+- Em cada ambiente a aplicação consegue se conectar em banco de dados diferentes, isolando assim o ambiente de teste e o de produção.
+
+- DEPENDÊNCIA ENTRE SERVIÇOS!
+
+- depends_on | Cahve de config. importante para garantir a ordem de inicialização e encerramento dos nossos serviços.
+
+- A configuração segue da seguinte forma:
+    - Três serviços, um deles usando uma imagem Docker pronta e dois com arquivo Dockerfile;
+    - Mapeamos as portas de conexão;
+    - Configuramos a política de reinicialização;
+    - Criamos uma variável de ambiente;
+    - Definimos a ordem de subida dos serviços.
+
+- SUBINDO TODOS OS SERVIÇOS!
+
+- docker-compose up -d | Comando para a execução do compose.
+    - -d | serve para executarmos todos os serviços no modo segundo plano.
+        - Sem esta flag, os logs dos três serviços aparecem no console simultaneamente, dificultando a leitura.
+    - docker-compose logs <nome-do-serviço> | Comando para ler os logs de cada um dos serviços posteriormente, caso o compose suba sem a flag -d.
+
+- Além de executar os containers, o Compose vai criar uma rede virtual padrão entre esses containers , permitindo a comunicação entre eles.
+
+- docker-compose ps | Para visualizar o status dos nossos serviços.
+    - Este comando traz um resumo do nome interno dos containers , se os containers estão saudáveis e se as portas foram mapeadas corretamente.
+
+- http://localhost:3000 | Para acessar o frontend e verificar se deu tudo certo. 
+
+
+
+
 
 
