@@ -66,6 +66,8 @@
 - docker-compose up | Comando usado junto com a flag anterior.
     - Exemplo: docker-compose up -d --build
 
+- DESCENDO TODOS OS SERVIÇOS!
+
 
 
 
