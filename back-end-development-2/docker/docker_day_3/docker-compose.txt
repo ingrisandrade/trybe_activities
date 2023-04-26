@@ -120,7 +120,9 @@
     - Para o back-end, declaramos que ele está presente na rede-virtual-1 e na rede-virtual-2;
     - Para o database, declaramos que ele está presente na rede-virtual-2.
 
+------------------------------------------
 
+- docker-compose up | Aceita a flag:
+- --scale service=<número-de-replicas> | Onde é possível configurar a quantidade de réplicas para um serviço.
 
-
-
+- O Compose chama os containers orquestrados de serviço para possibilitar a criação de várias réplicas, desde que a situação se mostre necessária para isso. 
