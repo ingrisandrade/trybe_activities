@@ -24,5 +24,28 @@
       - -p | Indica qual porta no nosso sistema operacional o docker estará em funcionamento. A porta | 3306 do lado esquerdo | é a porta do nosso sistema, que receberá o container e a porta | 3306 lado direito | é a porta do container. Obs.: 3306 é a porta padrão do MySQL.
       - run | É responsável por criar e iniciar o container;
 
+- docker exec -it container-mysql bash | Para visualizar quais bancos de dados estão disponíveis, através do modo interativo do docker.
+
+- mysql -u root -p | Para acessar o mysql dentro do container. Obs.: Utiliza-se o usuário root, que é o padrào da imagem do MySQL.
+
+- SHOW DATABASES; | Para ver todos os bancos de dados que estão instalados atualmente.
+
+- Obs.: 
+    - Por convenção, utilizamos as palavras chave do SQL em caixa alta para diferenciar das indicações de tabelas e colunas.
+    - É fundamental utilizar o ; (ponto e vírgula) ao final de cada comando SQL, caso contrário ele não irá funcionar.
+
+- USE | serve pra definir a referência do banco de dados que será utilizado na query. Exemplo:
+    -  USE nome_do_banco_de_dados_que_quero_conectar;
+        -- Exemplo de saída: USE trybe;
+
+- banco_de_dados.tabela | Outra forma de fazer referência ao banco, sem precisar rodar o USE.
+
+- SHOW TABLES; | Para retornar todas as tabelas inicializadas no seu server.
+
+-  DESCRIBE nome_da_tabela; | Visualizar estrutura de uma tabela.
+    -- Exemplo de saída: DESCRIBE students;
+
+-  CREATE DATABASE nome_do_banco_de_dados; | Criar um banco de dados.
+    -- Exemplo de saída: CREATE DATABASE trybe;
 
 
