@@ -103,7 +103,12 @@
           volumes:
             - ./logs:/var/log/frontend    # caminho no computador : caminho no container
 
+- CRIANDO REDES VIRTUAIS!
 
+- O Compose nos permite criar múltiplas redes virtuais entre os serviços. Isso é muito importante, pois nos permite criar arquiteturas mais seguras.
+    - O serviço front-end só precisa se comunicar diretamente com o back-end;
+    - O serviço back-end precisa se comunicar tanto com o front-end quanto com o database;
+    - O serviço database só precisa se comunicar diretamente com o back-end.
 
 
 
