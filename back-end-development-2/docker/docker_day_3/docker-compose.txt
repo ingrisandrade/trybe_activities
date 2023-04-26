@@ -110,5 +110,17 @@
     - O serviço back-end precisa se comunicar tanto com o front-end quanto com o database;
     - O serviço database só precisa se comunicar diretamente com o back-end.
 
+- networks | Nova chave criada. Explicação:
+    - Em cada linha declaramos o nome de uma nova rede virtual;
+    - As redes virtuais permitem criar isolamento entre os serviços;
+    - Ao utilizar esta chave, o Compose não vai mais criar a rede virtual padrão, como estava fazendo antes!
+
+- networks | essa chave também é adicionada em cada serviço. Explicação:
+    - Para o front-end, declaramos que ele está presente na rede-virtual-1;
+    - Para o back-end, declaramos que ele está presente na rede-virtual-1 e na rede-virtual-2;
+    - Para o database, declaramos que ele está presente na rede-virtual-2.
+
+
+
 
 
