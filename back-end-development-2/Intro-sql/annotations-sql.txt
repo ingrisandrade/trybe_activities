@@ -1,6 +1,6 @@
 - SGBD - Sistema de Gerenciamento de Banco de Dados.
 
-- Principais tipod de BD:
+- Principais tipos de BD:
 
     - Relacionais(SQL): Armazenam os dados em tabelas, onde existem linhas e colunas e extrutura pré-definida, sem alterações dinâmicas.
         - Previsibilidade.
