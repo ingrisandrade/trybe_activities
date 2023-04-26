@@ -93,13 +93,15 @@
 
 - Criar redes virtuais: onde alguns serviços podem se comunicar apenas em uma rede virtual #1, enquanto outros serviços podem se comunicar apenas em uma rede virtual #2.
 
-- <nome-do-volume>:<caminho-no-container-para-montar> | No serviço database, o caminho /data/db será persistido, mesmo se a gente descer e subir este serviço novamente! Exemplo: 
-        volumes:
-          - dados-do-banco:/data/db    # nome do disco virtual : caminho no container
+- <nome-do-volume>:<caminho-no-container-para-montar> | No serviço database, o caminho | /data/db | será persistido, mesmo se a gente descer e subir este serviço novamente! Exemplo: 
+    volumes:
+      - dados-do-banco:/data/db    # nome do disco virtual : caminho no container
       - Por que mapear o caminho “/data/db”? 🤔 como este banco de dados é um MongoDB, seus dados são armazenados nesta pasta específica, segundo sua documentação.
-
-
-
+      - Também houve um mapeamento de volume no serviço de front-end! Na nova chave | volumes | a pasta do computador local | ./logs | é mapeada para uma pasta dentro do serviço de frontend | /var/log/frontend |
+      - Dessa forma, não é necessário criar volumes virtuais, pois estamos usando uma pasta do nosso próprio computador!
+      Exemplo:
+          volumes:
+            - ./logs:/var/log/frontend    # caminho no computador : caminho no container
 
 
 

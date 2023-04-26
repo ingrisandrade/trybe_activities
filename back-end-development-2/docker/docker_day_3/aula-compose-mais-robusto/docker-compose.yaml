@@ -10,7 +10,7 @@ services:
     volumes:
       - ./logs:/var/log/frontend
   backend:
-    build: backend
+    build: backend/
     restart: always
     ports:
       - 3001:3001
@@ -26,3 +26,6 @@ services:
 
 volumes:
   dados-do-banco:
+
+# Para subir o compose:
+# docker-compose up -d
