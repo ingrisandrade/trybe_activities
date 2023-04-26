@@ -89,6 +89,16 @@
 
 - ARQUIVOS COMPOSE MAIS ROBUSTOS!
 
+- Criar volumes: são pastas dentro de um serviço que é persistente, ou seja, mesmo após descer o serviço, esta pasta ainda mantém seus arquivos na próxima vez que os serviços subirem.
+
+- Criar redes virtuais: onde alguns serviços podem se comunicar apenas em uma rede virtual #1, enquanto outros serviços podem se comunicar apenas em uma rede virtual #2.
+
+- <nome-do-volume>:<caminho-no-container-para-montar> | No serviço database, o caminho /data/db será persistido, mesmo se a gente descer e subir este serviço novamente! Exemplo: 
+        volumes:
+          - dados-do-banco:/data/db    # nome do disco virtual : caminho no container
+      - Por que mapear o caminho “/data/db”? 🤔 como este banco de dados é um MongoDB, seus dados são armazenados nesta pasta específica, segundo sua documentação.
+
+
 
 
 
