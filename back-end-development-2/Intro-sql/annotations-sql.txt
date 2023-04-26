@@ -1,1 +1,11 @@
 - SGBD - Sistema de Gerenciamento de Banco de Dados.
+
+- Principais tipod de BD:
+
+    - Relacionais(SQL): Armazenam os dados em tabelas, onde existem linhas e colunas e extrutura pré-definida, sem alterações dinâmicas.
+        - Previsibilidade.
+        - Possibilidade de criar relacionamentos entre as tabelas.
+
+    - Não relacionais(NoSQL): Também podem usar estruturas pré-definidas, mas não é obrigatório.
+    - Os dados podem ser inseridos dinâmicamente, sem precisar alterar a estrutura do BD.
+    - Não há uma linguagem de pesquisa fixa.
