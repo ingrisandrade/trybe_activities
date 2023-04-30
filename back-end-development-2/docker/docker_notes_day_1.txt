@@ -54,7 +54,7 @@ Obs.: -t | Solicita a criação de uma sessão de terminal;
 
 - docker logs <flags> <nome-do-container> | Comando para que seja possível a visualização das informações do container sem precisar se conectar diretamente ao terminal do container.
 
-- docker system prune -af | Remove todos os containers e imagens Docker que estejam no computador.
+- docker system prune -f | Olhar na aula ao vivo do course.
 
 - docker container rm -f $(docker ls -qa) | Apaga todos os containers.
   O | -qa | pega todos os ids.
