@@ -1,6 +1,6 @@
 # Trybe Course - Full Stack Web Development
 
-This repository contains all Frontend learning activities developed by _[Ingris Andrade](https://www.linkedin.com/in/ingrisandrade/)_ while studying at [Trybe](https://www.betrybe.com /): rocket:
+This repository contains all Frontend learning activities developed by _[Ingris Andrade](https://www.linkedin.com/in/ingrisandrade/)_ while studying at [Trybe](https://www.betrybe.com/) :rocket:
 
 _"Trybe is a school of the future for those who want to improve their lives and build a successful career in technology, where people only pay when they get a good job."_
 
